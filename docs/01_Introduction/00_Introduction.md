@@ -1,12 +1,16 @@
 
-# UDOO NEO
-**UDOO NEO** is an all-in-one open hardware low-cost computer equipped with a NXP&trade; i.MX 6SoloX applications processor for Android and Linux.
+# UDOO BLU
 
-UDOO NEO embeds two cores on the same processor: a powerful 1GHz ARM® Cortex-A9, and an ARM Cortex-M4 I/O real-time co-processor that can run up to 200Mhz.
+**UDOO BLU** is a natural wireless I/O extension for IoT projects. This module features:
 
-While the Cortex-A9 can run both Android Lollipop and [UDOObuntu 2](../Software_&_Operating_Systems/UDOObuntu.html) - a dedicated Ubuntu-based Linux distro - the Cortex-M4 allows easy access to a Arduino&trade; environment. The snap-in connector ensures a plug-and-play interaction with most sensors and actuators.
+* Bluetooth Low Energy device
+* ZigBee and 6LoWPAN;
+* 3 user configurable LEDs (Red, Green, Yellow);
+* 8 digital GPIOs, 6 available ADCs!
+* Powered via button cell!
+* It has snap-in connectors to allow a cascade configuration with all the [UDOO BRICKS](http://www.udoo.org/udoo-bricks/)!
 
-Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module, the board is ideal to create robots, drones and rovers as well as any Mobile IoT project you can imagine.
+Download the [UDOO BLU datasheet](http://www.udoo.org/download/files/datasheets/datasheet_blu_bricks.pdf) here.
 
 <hr/>
 
@@ -17,15 +21,14 @@ Thanks to its embedded 9-axis motion sensors and a Wi-Fi + Bluetooth 4.0 module,
 
 
 ### Lineup
-UDOO NEO retail line up consists of [three models](../Hardware_Reference/Board%20versions.html).
-
-<img src="../img/udoo_neo_versions.jpg" alt="UDOO versions" class="img-responsive" >
+<!--TODO: fix Lineup-->
 
 
 
 ### Technical specifications
 
 <hr/>
+<!--TODO: fix image-->
 <img src="../img/udoo_neo_docs.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
 * NXP® i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and a Cortex-M4 Core
