@@ -20,53 +20,32 @@ Download the [UDOO BLU datasheet](http://www.udoo.org/download/files/datasheets/
 * Never keep the board in touch with metal objects or surfaces while it is powered up
 
 
-### Lineup
-<!--TODO: fix Lineup-->
-
-
-
 ### Technical specifications
 
 <hr/>
-<!--TODO: fix image-->
-<img src="../img/udoo_neo_docs.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
-* NXP® i.MX 6SoloX applications processor with an embedded ARM Cortex-A9 core and a Cortex-M4 Core
-* 512MB (Basic) or 1GB (only Extended and Full)
-* Integrated 2d/3d graphics controller
-* Micro HDMI interface
-* LVDS interface + touch (I2C signals)
-* Analog camera connection supporting NTSC and PAL
-* 8-bit parallel camera interface*
-* HDMI audio transmitter
-* S/PIDF & I2S*
-* 1x USB 2.0 Type A ports
-* 1x USB OTG (micro-AB connector)
-* Fast ethernet RJ45 – 10/100Mbps (only Basic and Full)
-* Wi-Fi 802.11 b/g/n,Direct Mode SmartConfig and Bluetooth 4.0 Low Energy (only Extended and Full)
-* 3x UART ports*
-* 2x CAN Bus interfaces*
-* 8x PWM signals*
-* 3x I2C interface*
-* 1x SPI interface*
-* 6x multiplexable signals*
-* 5 V DC Micro USB
-* 6-15 V DC Power Jack
-* RTC Battery Connector
-* Green Power Status LED
-* User Configurable LEDs (Red and Orange)
-* 3-Axis Accelerometer (only Extended and Full)
-* 3-Axis Magnetometer (only Extended and Full)
-* 3-Axis Digital Gyroscope (only Extended and Full)
-* 1x Sensor Snap-In I2C connector (only Extended and Full)
-* 89mm x59mm (3.50″ x 2.32″)
-* Arduino-Compatible through the standard Arduino Pins layout and compatible with Arduino shields.
-* 32 extended GPIOs (A9 dedicated)
-* 22 Arduino GPIOs (M4 dedicated)
-* 6 available Pins
-* Android Lollipop & Linux UDOObuntu2 (14.04 LTS)
+<img src="../img/blu-pins.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
-&#42;Available on Pin Header
+* Texas Instruments CC2650 ARM Cortex M3
+* Networking
+  * Bluetooth Low Energy (BLE)
+  * 6LoWPAN
+* Integrated sensors
+  * FX0S8700CQ Acceleromter+Magnetometer
+  * FXAS21002C Gyroscope+Temperature
+  * 1x Sensors Snap-In I2C connector for UDOO Bricks
+* 3x User Configurable LEDs (Red, Yellow, Green)
+* Dimensions: 45mm x35mm (1.77″ x 1.37″)
+* Digital I/O Pins:	8x Digital GPIOs
+* Analog Input Pins:	6x Available ADCs
+* 2x Buttons
+* Other Interfaces:
+  * 1x I2C
+  * 1x SPI
+  * 1x UART Serial
+* Power Supply:
+  * Battery Holder (button-cell) CR2032
+  * External power supply max 5.5V
 
 <hr/>
 
