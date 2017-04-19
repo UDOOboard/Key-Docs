@@ -6,7 +6,7 @@ FXOS8700CQ is guaranteed to operate over the extended temperature range of -40 Â
 
 * **I2C address: `0x1E`**
 
-<a href="../img/accmag_fxos8700.png" target="_blank"><img style="width:700px; " src="../img/accmag_fxos8700.png"></a>
+<a href="../img/accmag_fxos8700.png" target="_blank"><img style="width:500px; " src="../img/accmag_fxos8700.png"></a>
 
 ## Gyroscope FXAS2100CQ - R1
 
@@ -15,4 +15,4 @@ An integrated Low-Pass Filter (LPF) allows the host application to limit the dig
 
 * **I2C address: `0x20`**
 
-<a href="../img/gyro_fxas2100.png" target="_blank"><img style="width:700px; " src="../img/gyro_fxas2100.png"></a>
+<a href="../img/gyro_fxas2100.png" target="_blank"><img style="width:500px; " src="../img/gyro_fxas2100.png"></a>
