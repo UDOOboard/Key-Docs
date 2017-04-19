@@ -24,7 +24,7 @@ Download the [UDOO BLU datasheet](http://www.udoo.org/download/files/datasheets/
 
 <hr/>
 
-<img src="../img/blu-pins.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
+<img src="../img/blu_pins.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
 * Texas Instruments CC2650 ARM Cortex M3
 * Networking
@@ -44,8 +44,8 @@ Download the [UDOO BLU datasheet](http://www.udoo.org/download/files/datasheets/
   * 1x SPI
   * 1x UART Serial
 * Power Supply:
-  * Battery Holder (button-cell) CR2032
-  * External power supply max 5.5V
+  * Battery Holder (button-cell) CR2032 - 3V
+  * External power supply - min 3.3V - max 5.5V
 
 <hr/>
 
