@@ -8,7 +8,7 @@ UDOO BLU features **3 LEDs** with different colors:
 
 **LED Status table**
 
-Using one of the official UDOO firmwares.
+Using one of the official UDOO firmwares you will find the LED behaviors listed in the table below:
 
 | LED                  | Action                        | UDOO BLU's status         |
 |----------------------|-------------------------------|---------------------------|
@@ -31,4 +31,4 @@ UDOO BLU features **2 Buttons** to be used by the user.
 
 In the **UDOO BLU** the I2C Bricks snap-in connector is connected to the **I2C2** of the TI CC2650 MCU.
 
-<a href="../img/blu_brick_connector.png" target="_blank"><img style="width:300px; " src="../img/blu_brick_connector.png"></a>
+<a href="../img/blu_brick_connector.png" target="_blank"><img style="width:250px; " src="../img/blu_brick_connector.png"></a>
