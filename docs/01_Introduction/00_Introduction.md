@@ -8,9 +8,9 @@
 * 3 user configurable LEDs (Red, Green, Yellow);
 * 8 digital GPIOs, 6 available ADCs!
 * Powered via button cell!
-* It has snap-in connectors to allow a cascade configuration with all the [UDOO BRICKS](http://www.udoo.org/udoo-bricks/)!
+* It has snap-in connectors to allow a cascade configuration with all the [UDOO BRICKS](https://www.udoo.org/udoo-bricks/)!
 
-Download the [UDOO BLU datasheet](http://www.udoo.org/download/files/datasheets/datasheet_blu_bricks.pdf) here.
+Download the [UDOO BLU datasheet](https://www.udoo.org/download/files/datasheets/datasheet_blu_bricks.pdf) here.
 
 <hr/>
 
@@ -50,11 +50,11 @@ Download the [UDOO BLU datasheet](http://www.udoo.org/download/files/datasheets/
 <hr/>
 
 ## Community
-* Official web site [www.udoo.org](http://www.udoo.org)
-* Official forum [www.udoo.org/forum](http://www.udoo.org/forum/index.php)
+* Official web site [www.udoo.org](https://www.udoo.org)
+* Official forum [www.udoo.org/forum](https://www.udoo.org/forum/index.php)
 
 ### Forums
-The official UDOO forums can be found at [www.udoo.org/forum](http://www.udoo.org/forum)
+The official UDOO forums can be found at [www.udoo.org/forum](https://www.udoo.org/forum)
 
 The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
 
