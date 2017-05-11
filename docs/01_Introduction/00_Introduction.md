@@ -19,6 +19,10 @@ Download the [UDOO BLU datasheet](https://www.udoo.org/download/files/datasheets
 * Never provide more than 3.3V in input to the GPIOs
 * Never keep the board in touch with metal objects or surfaces while it is powered up
 
+<hr/>
+
+<img src="../img/udoo_blu_hor.png" alt="UDOO versions" class="img-responsive" >
+
 
 ### Technical specifications
 
