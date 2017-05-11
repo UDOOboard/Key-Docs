@@ -10,6 +10,9 @@ The Bluetooth Low Energy controller and the IEEE 802.15.4 MAC are embedded into 
 <a href="../img/cc2650_block_diagram.gif" target="_blank"><img style="width:500px; " src="../img/cc2650_block_diagram.gif"></a>
 
 ## Documentation Support
+
+Here you can find the [TI CC2650 Datasheet](http://www.ti.com/product/CC2650/datasheet)
+
 To receive notification of documentation updates, navigate to the device product folder on [ti.com (CC2650)](http://www.ti.com/product/CC2650).  
 In the upper right corner, click on Alert me to register and receive a weekly digest of any product information that has changed. For change details, review the revision history included in any revised document. The current documentation that describes the CC2650 devices, related peripherals, and other technical collateral is listed in the following.
 
