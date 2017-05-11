@@ -21,7 +21,7 @@ Download the [UDOO BLU datasheet](https://www.udoo.org/download/files/datasheets
 
 <hr/>
 
-<img src="../img/udoo_blu_hor.png" alt="UDOO versions" class="img-responsive" >
+<img src="../img/udoo_blu_hor.png" alt="UDOO BLU" class="img-responsive" >
 
 
 ### Technical specifications
