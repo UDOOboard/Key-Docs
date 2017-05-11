@@ -1,8 +1,8 @@
 {
-    "title": "UDOO Neo Docs",
+    "title": "UDOO BLU Docs",
     "tagline": "UDOO Board Documentation",
     "author": "UDOO Team",
-    "image": "/docs/img/logos/blu.png",
+    "image": "/docs/img/logos/docs.png",
     "ignore": {
         "files": [
         ]
