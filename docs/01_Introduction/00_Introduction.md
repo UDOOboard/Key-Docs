@@ -7,6 +7,7 @@
 * ZigBee and 6LoWPAN;
 * 3 user configurable LEDs (Red, Green, Yellow);
 * 8 digital GPIOs, 6 available ADCs!
+* 2 user Buttons
 * Powered via button cell!
 * It has snap-in connectors to allow a cascade configuration with all the [UDOO BRICKS](https://www.udoo.org/udoo-bricks/)!
 
@@ -32,7 +33,7 @@ Download the [UDOO BLU datasheet](https://www.udoo.org/download/files/datasheets
 
 * Texas Instruments CC2650 ARM Cortex M3
 * Networking
-  * Bluetooth Low Energy (BLE)
+  * Bluetooth Low Energy (BLE) v4.1
   * 6LoWPAN
 * Integrated sensors
   * FX0S8700CQ Acceleromter+Magnetometer
