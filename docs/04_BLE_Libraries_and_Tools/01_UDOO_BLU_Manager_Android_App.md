@@ -10,6 +10,7 @@ Features:
 * Set GPIO pins as inputs or outputs, and set or read the data.
 * Update the firmware using a BluetoothLE connection (OAD)
 
+The UDOO BLU Manager App is developed using the Android Library for the UDOO BLU **UDOOBluLib**. Check the [BLE Libraries](!BLE_Libraries_and_Tools/BLE_Libraries) section. 
 
 <img src="../img/blu_app_screens.png" alt="UDOO BLU Manager screens" class="img-responsive" >
 
@@ -21,4 +22,4 @@ To get started with UDOO BLU Manager the only things you need to do are:
 * Follow the easy step by step walkthrough you’ll find in the App.
 
 
-<a href="TODO: link google play" target="_blank"><img style="width:300px; " src="../img/blu_app_googleplay.png"></a>
+<a href="TODO: link google play"><img style="width:350px; " src="../img/blu_app_googleplay.png"></a>
