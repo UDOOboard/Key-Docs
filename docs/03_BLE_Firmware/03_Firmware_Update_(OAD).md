@@ -7,6 +7,11 @@ We provide more than one Firmware to cover all the features of the UDOO BLU boar
 
 You can upload the Firmware of the UDOO BLU using the OAD procedure in the [UDOO BLU Manager Android App](!BLE_Libraries_and_Tools/UDOO_BLU_Manager_Android_App) via BLE.
 
-Inside the **OAD** section of the App you can find the available BLE Firmwares you can upload on the UDOO BLU.
+Inside the **OAD** section of the App you can find the available BLE Firmwares(with description) you can upload on the UDOO BLU.
+
+The **UDOO BLU Manager** App use the [UDOOBluLib](!BLE_Libraries_and_Tools/BLE_Libraries) and the [Connection Control and OAD services](!BLE_Firmware/Profile_and_Services/Connection_Control_and_OAD_Services) to upload the Firmware on the UDOO BLU board.
+
 
 <img src="../img/blu_app_screen_oad.png" alt="UDOO BLU Manager OAD" class="img-responsive" width="350px" >
+
+<br/>
