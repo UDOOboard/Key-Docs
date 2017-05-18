@@ -1,6 +1,6 @@
 **Connection Control** and **OAD** services manage the wireless OTA (Over-The-Air) firmware update using BLE.  
 
-This procedure is called by Texas Instruments as **OAD (Over-The-Air Donwload)**.
+This procedure is called **OAD (Over-The-Air Donwload)** by Texas Instruments.
 
 These two services were developed by Texas Instruments and included in this firmware without any modification.
 
