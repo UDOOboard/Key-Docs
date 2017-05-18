@@ -13,5 +13,3 @@ The **UDOO BLU Manager** App use the [UDOOBluLib](!BLE_Libraries_and_Tools/BLE_L
 
 
 <img src="../img/blu_app_screen_oad.png" alt="UDOO BLU Manager OAD" class="img-responsive" width="350px" >
-
-<br/>
