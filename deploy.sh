@@ -12,7 +12,7 @@ git init
 git config user.name "Travis CI"
 git config user.email "social@udoo.org"
 
-# Add images
+# Add drivers and tools, delete LESS files
 cp -rp ../img .
 rm -rf themes/common/less
 rm -rf themes/daux/less/
