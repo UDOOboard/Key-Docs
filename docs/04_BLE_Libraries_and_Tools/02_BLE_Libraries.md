@@ -22,7 +22,7 @@ Include the library as local library project or add the dependency in your build
 
 ### Usage
 
-Check the README on the Github page to more info about the usage.
+Check the README on the Github page to more info about the usage. You can also find an example App in the library to help you understand how to manage the UDOO BLU with the UDOOBluLib.
 
 
 # Nodejs Library - node-udoo-blu
