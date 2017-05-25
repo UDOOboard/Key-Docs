@@ -21,4 +21,4 @@ To get started with UDOO BLU Manager the only things you need to do are:
 * Download the app from the Google Play Store from the link below;
 * Follow the easy step by step walkthrough you’ll find in the App to pair the UDOO BLU near you and start using its functionalities.
 
-<a href="TODO: link google play"><img style="width:350px; " src="../img/blu_app_googleplay.png"></a>
+<a href="https://play.google.com/store/apps/details?id=org.udoo.udooblu"><img style="width:380px; " src="../img/blu_app_googleplay.png"></a>
