@@ -1,6 +1,6 @@
-The UDOO BLU BLE Firmware can be updated wireless Over-The-Air.
+The *UDOO BLU BLE Firmware* can be updated wireless *Over-The-Air*.
 
-This procedure is called **OAD (Over-The-Air Donwload)** by Texas Instruments.
+This procedure is called **OAD (Over-The-Air Download)** by Texas Instruments.
 
 Since the flash memory size of the TI CC2650 micro-controller is 128KiB not all the features(services) can be contained in a single Firmware.  
 We provide more than one Firmware to cover all the features of the UDOO BLU board.
