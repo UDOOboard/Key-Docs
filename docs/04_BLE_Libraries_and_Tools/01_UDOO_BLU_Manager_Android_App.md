@@ -18,7 +18,12 @@ The UDOO BLU Manager App is developed using the Android Library for the UDOO BLU
 
 To get started with UDOO BLU Manager the only things you need to do are:
 
-* Download the app from the Google Play Store from the link below;
+* Download the app from the Google Play Store, or the .apk file, from the links below;
 * Follow the easy step by step walkthrough you’ll find in the App to pair the UDOO BLU near you and start using its functionalities.
 
+Download from the Play Store:  
+
 <a href="https://play.google.com/store/apps/details?id=org.udoo.udooblu"><img style="width:380px; " src="../img/blu_app_googleplay.png"></a>
+
+
+Download the .apk file: [UDOO BLU Manager](http://download.udoo.org/files/UDOO_BLU/app/bluHomeApp-release.apk)
