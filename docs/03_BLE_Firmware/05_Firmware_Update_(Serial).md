@@ -6,6 +6,7 @@ In order to update the firmware through the serial connection you need:
 <span class="label label-warning">Heads up!</span> The following procedure is for **Windows** only.
 
 The procedure is the following:
+0. Download the official firmware you want to upload on the UDOO BLU from the [Firmware Overview](!BLE_Firmware/Firmware_Overview) page.
 1. Download and install the official TI [SmartRF Flash Programmer 2(SFP2)](http://www.ti.com/tool/flash-programmer).
 2. Run it.
 3. Connect the 3.3V USB/TTL serial converter to the PC.
