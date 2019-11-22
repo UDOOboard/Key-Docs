@@ -26,4 +26,4 @@ Download from the Play Store:
 <a href="https://play.google.com/store/apps/details?id=org.udoo.udooblu"><img style="width:380px; " src="../img/blu_app_googleplay.png"></a>
 
 
-Download the .apk file: [UDOO BLU Manager](http://download.udoo.org/files/UDOO_BLU/app/bluHomeApp-release.apk)
+Download the .apk file: [UDOO BLU Manager](https://udoo.org/download/files/UDOO_BLU/app/bluHomeApp-release.apk)
