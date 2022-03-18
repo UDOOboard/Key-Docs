@@ -1,8 +1,8 @@
 {
-    "title": "UDOO Blu Docs",
-    "tagline": "UDOO Blu Documentation",
+    "title": "UDOO Key Docs",
+    "tagline": "UDOO Key Documentation",
     "author": "UDOO Team",
-    "image": "https://www.udoo.org/docs/img/logos/docs.png",
+    "image": "../img/logo_docs.png",
     "ignore": {
         "files": [
         ]
@@ -13,12 +13,13 @@
 	    "breadcrumbs": false,
 	    "date_modified": false,
 	    "float": false,
-	    "repo": "UDOOboard/Blu-Docs",
+	    "repo": "UDOOboard/Key-Docs",
 	    "links": {
 	        "Home": "https://www.udoo.org",
 	        "Downloads": "https://www.udoo.org/downloads",
 	        "Tutorials": "https://www.udoo.org/tutorial",
-	        "Forum": "https://www.udoo.org/forum"
+	        "Forum": "https://www.udoo.org/forum",
+          "Github Docs": "https://github.com/UDOOboard/Bolt-Docs"
 	    }
     }
 }
