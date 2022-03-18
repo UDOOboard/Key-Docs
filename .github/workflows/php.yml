@@ -30,7 +30,7 @@ jobs:
     
     - name: Install Dependences Build and Deploy
       env: 
-          GH_REF: github.com/UDOOboard/Vision-Docs.git
+          GH_REF: github.com/UDOOboard/Key-Docs.git
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           TKX: ${{ secrets.TKX }}
       run: ./deploy.sh
