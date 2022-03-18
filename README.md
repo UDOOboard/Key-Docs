@@ -1,4 +1,4 @@
-# UDOO Blu Documentation
+# UDOO Key Documentation
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/UDOOboard/X86-Docs/LICENSE)
 
