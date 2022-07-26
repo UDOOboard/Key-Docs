@@ -60,6 +60,50 @@ Open a terminal and type:
 #   It is the entry-point of your firmware and contains the instruction to perform the actions we want
 ```
 
+Open the `blinker.c` file inside current folder and copy the below content inside it.  
+It is the entry-point of your firmware and contains the instruction to perform the actions we want.
+
+``` C
+
+#include <stdio.h>
+
+#include <driver/gpio.h>
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+
+#define B_LED_PIN GPIO_NUM_32
+#define Y_LED_PIN GPIO_NUM_33
+
+
+void led_blinker_task () {
+    gpio_pad_select_gpio(B_LED_PIN);
+    gpio_set_direction (B_LED_PIN, GPIO_MODE_OUTPUT);
+    gpio_pad_select_gpio(Y_LED_PIN);
+    gpio_set_direction (Y_LED_PIN, GPIO_MODE_OUTPUT);
+
+    while (1) {
+        gpio_set_level(Y_LED_PIN, 0);
+        gpio_set_level(B_LED_PIN, 0);
+
+        gpio_set_level(B_LED_PIN, 1);
+        vTaskDelay(pdMS_TO_TICKS(128));
+        gpio_set_level(B_LED_PIN, 0);
+        vTaskDelay(pdMS_TO_TICKS(128));
+        gpio_set_level(B_LED_PIN, 1);
+        vTaskDelay(pdMS_TO_TICKS(128));
+        gpio_set_level(B_LED_PIN, 0);
+        
+        gpio_set_level(Y_LED_PIN, 1);
+        vTaskDelay(pdMS_TO_TICKS(2000));
+    }
+}
+
+
+void app_main(void) {
+    xTaskCreate (&led_blinker_task, "led_blinker_task", 1024, NULL, 2, NULL);
+}
+```
+
 Now that everything is ready, you can build and flash the program.
 As explained in the video at the beginning of this page, you must leave the jumper **JP1** opened to drive the serial communication to ESP microcontroller and then you can connect your board to PC.  
 After the connection, a serial port appears on your file system. Its path can be `/dev/ttyUSB0` or `/dev/ttyUSB1` or `/dev/ttyUSB2` and so on, depending if you already have connected serial devices. In the following commands, the port path is referred with `<PORT>` string.  
