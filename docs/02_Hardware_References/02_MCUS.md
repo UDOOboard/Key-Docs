@@ -116,16 +116,16 @@ The following table shows the pin configuration.
 
 
 
-To let you to create projects that leverage the powerful of both microcontrollers, they are connected through a **serial connection**.  
+To let you to create projects that leverage the power of both microcontrollers, they are connected through a **serial connection**.  
 Such connection uses **GPIO0** (TX) and **GPIO1** (RX) on RP2040 and, on ESP32, **IO19** (RX) and **IO22** (TX). On schematic file those connections are labeled with *RPI_UART_TX* and *RPI_UART_RX*.  
-Keep in mind that RP's GPIO0 is connected to ESP's IO19 and, vice versa, GPIO1 is connected with IO22.  
+Keep in mind that RP GPIO0 is connected to ESP IO19 and, vice versa, GPIO1 is connected with IO22.  
 Thanks to this connection you can exchange between the MCUs whichever stream of bytes. 
 
 There can be exist cases in which the RP2040 must be restarted remotely: you can perform this operation from the ESP32.  
 The pin number 10 on **P2** header (**RPI_RESET**) is connected to ESP pin **IO23**. By setting its output level **LOW** the RP2040 execution is disabled, while, setting output level **HIGH**, the RP2040 execution is restored.  
 So, to reset the Raspberry microcontroller from ESP, let's set the output level LOW and then move to HIGH.
 
-Moreover, to enable the possibility of RP2040 OTA programming, its SWD lines are connected to ESP pins as shown in the following table.  
+Moreover, to enable the RP2040 OTA programming, its SWD lines are connected to ESP pins as shown in the following table.  
 Since the RP2040 can be programmed also trough on-board SWD header **P5**, the user must ensure that, while he want to use such interface, the GPIO **IO5** level is set to **HIGH**. To use external headers, such GPIO must be set to **LOW** level.
 
 Keep in mind that the IMU snsor is connected to both microcontrollers and, to select which of them can interact with it, a jumper must be inserted as explained in the following table. As explained in the schematic file, pin number 1 is the more closer to the RP2040 and pin number 3 is the more closer to the ESP32. 

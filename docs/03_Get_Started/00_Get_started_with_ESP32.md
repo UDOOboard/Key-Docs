@@ -3,7 +3,7 @@
 After speaking a long about technical specifications and boards components, let's start doing things in order to load firmware in flash memory of microcontrollers!
 
 Now we will install all **dependencies** and **frameworks**, in Linux-based and Windows OSs, for ESP32 microcontroller and start **programming** it.  
-The framework we chosen is the official one, the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html), but several other frameworks can be used to programming the ESP32. Among the others the most used are [MicroPython](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html) and [Arduino](https://github.com/espressif/arduino-esp32). Chose the one you prefer!
+The framework we chose is the official one, the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html), but several other frameworks can be used to programming the ESP32. Among the others the most used are [MicroPython](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html) and [Arduino](https://github.com/espressif/arduino-esp32). Choose the one you prefer!
 
 
 ## Linux
@@ -20,7 +20,7 @@ Additionally you can watch in the video below the full installation procedure ex
 >
 </iframe>
 
-In addition to following packages, a text editor is required: you can use `VS Code` or `emacs` or wathever you want!
+In addition to following packages, a text editor is required: you can use `VS Code` or `emacs` or whatever you want!
 
 Open a terminal and type the following commands:
 
@@ -45,7 +45,7 @@ get_idf
 
 ---
 
-Now it's the moment to create and load on your board the first program that makes blinking the two on-board LEDs!  
+Now it's the moment to create and load on your board the first program that makes the two on-board LEDs blink!  
 Open a terminal and type:
 
 ``` bash
@@ -57,7 +57,7 @@ idf.py create-project blinker
 cd blinker/main
 ```
 
-Open the `blinker.c` file inside current folder and copy the below content inside it.  
+Open the `blinker.c` file inside current folder and copy the content below inside it.  
 It is the entry-point of your firmware and contains the instruction to perform the actions we want.
 
 
@@ -113,7 +113,7 @@ idf.py -p <PORT> build flash monitor
 ```
 
 The above command will build the entire project (`build` command), will load the firmware into the ESP flash memory (`flash` command) and will monitor the output produced by the microcontroller and sent via the serial connection (`monitor` command).  
-Keep in mind that you can also invoke `buld`, `flash`, and `monitor` commands separately.  
+Keep in mind that you can also invoke `build`, `flash`, and `monitor` commands separately.  
 Type the command `idf.py help` to get the full list of available commands.
 
 At this point the board need to be resetted to execute the just flashed firmware.  
@@ -124,7 +124,7 @@ Let's open the jumper **JP2** and push the reset button **SW3** to see LEDs in a
 For Windows OS installation, Espressif provides an installer which automatically performs everything.  
 Firstly download the installer [here](https://dl.espressif.com/dl/esp-idf/?idf=4.4) and launch it.
 
-After the installation, you an open a **ESP-IDF prompt** by searching for **ESP-IDF 4.4 CMD** entry in the Start menu.  
+After the installation, you can open a **ESP-IDF prompt** by searching for **ESP-IDF 4.4 CMD** entry in the Start menu.  
 Once launched, a new prompt is executed with the environment already loaded.
 
 Now you can create a project, copy the code and flash the ESP32 in the same way explained for the Linux OS using an **ESP-IDF command prompt**.
