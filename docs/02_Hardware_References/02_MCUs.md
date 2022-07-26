@@ -35,7 +35,7 @@ The RP2040 microcontroller is a chip from Raspberry Pi Foundation that integrate
 The UDOO KEY is **100% compatible with Raspberry Pi Pico** both hardware and software-wise. This means that each and any expansion hardware as well as each and any software built for Raspberry Pi Pico will work out of the box on UDOO KEY.
 For further information on RP2040, please refer to the dedicated page on [raspberrypi.com](htps://raspberrypi.com). 
 
-**P1** and **P2** connectors of the Pico part, can be used to connect external peripherals to the RP2040. To use these connectors, two 20-pin headers or castellated holes must be soldered on P1 and P2 in a proper manner. The following tables summarize the possibilities offered by P1 and P2 connectors.
+**P1** and **P2** connectors of the Pico part can be used to connect external peripherals to the RP2040. Two 20-pin headers or castellated holes must be soldered on P1 and P2 in a proper manner to use them . The following tables summarize the possibilities offered by P1 and P2 connectors.
 
 #### P1
 | Pin number | Schematic pin name | SPI | UART interface | I²C | PWM | SIO/PIO |
@@ -124,7 +124,12 @@ There can be exist cases in which the RP2040 must be restarted remotely: you can
 The pin number 10 on **P2** header (**RPI_RESET**) is connected to ESP pin **IO23**. By setting its output level **LOW** the RP2040 execution is disabled, while, setting output level **HIGH**, the RP2040 execution is restored.  
 So, to reset the Raspberry microcontroller from ESP, let's set the output level LOW and then move to HIGH.
 
-Moreover, to enable the RP2040 OTA programming, its SWD lines are connected to ESP pins as shown in the following table.  
+Moreover, to enable RP2040 OTA programming, its SWD lines are connected to ESP pins as shown in the following table.  
+| ESP GPIO NUM | RP SWD interface |
+| ---            | ---            |
+| IO2            | SWDIO          |
+| IO4            | SWCLK          |
+
 Since the RP2040 can be programmed also through on-board SWD header **P5**, the user must ensure that, while he want to use such interface, the GPIO **IO5** level is set to **HIGH**. To use external headers, such GPIO must be set to **LOW** level.
 
 Keep in mind that the IMU sensor is connected to both microcontrollers and, to select which of them can interact with it, a jumper must be inserted as explained in the following table. As explained in the schematic file, pin number 1 is the more closer to the RP2040 and pin number 3 is the more closer to the ESP32. 
