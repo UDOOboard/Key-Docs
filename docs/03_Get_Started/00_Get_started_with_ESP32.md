@@ -45,7 +45,7 @@ Open a terminal and type the following commands:
 
 ---
 
-Now it's the moment to create and load on your board the first program that makes blinking te two on-board LEDs!  
+Now it's the moment to create and load on your board the first program that makes blinking the two on-board LEDs!  
 Open a terminal and type:
 
 ``` bash
@@ -56,7 +56,7 @@ Open a terminal and type:
 :~/ws/esp$ idf.py create-project blinker
 :~/ws/esp$ cd blinker/main
 :~/ws/esp/blinker/main$ 
-# Noe paste the content of this file https://example.com on the blinker.c file that you can find in the current folder
+# Now paste the content of this file https://example.com on the blinker.c file that you can find in the current folder
 #   It is the entry-point of your firmware and contains the instruction to perform the actions we want
 ```
 

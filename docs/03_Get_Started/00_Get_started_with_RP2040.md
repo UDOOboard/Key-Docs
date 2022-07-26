@@ -31,7 +31,7 @@ In a command line, type:
 
 Now upload the MicroPython firmware into RP flash.  
 Donwload its latest release from [this page](https://micropython.org/download/rp2-pico/).  
-Now, once the file is downladed, put the microcontroller in flash mode: firstly close the jumper **JP1** to allow the computer to interact with RP and connect the board to your PC using an USB Type-C cable. Now keep pressed the button **SW2** labeled as `BOOTSEL` and push the reset button **SW1**. After these operations, the board is deteted as a removable device by your computer.  
+Now, once the file is downladed, put the microcontroller in flash mode: firstly close the jumper **JP1** to allow the computer to interact with RP and connect the board to your PC using an USB Type-C cable. Now keep pressed the button **SW2** labeled as `BOOTSEL` and push the reset button **SW1**. After these operations, the board is detected as a removable device by your computer.  
 Simply copy the just downloaded `.uf2` file and paste it into the removable drive. In this way you can program the Raspberry MCU!
 
 Now that the MycroPython framework is loaded, crete a file called main.py and copy the following code on it.  
