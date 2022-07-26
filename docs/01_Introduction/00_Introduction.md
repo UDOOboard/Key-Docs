@@ -17,17 +17,11 @@ The two microcontrollers can communicate via **serial port** or **SWD interface*
 
 <p>
 
-Download the [User Manual](http://example.com/) to have a more complete explanation of the UDOO KEY hardware and features.      **#FIXME**
+Download the [User Manual](http://example.com/) to have a more complete explanation of the UDOO KEY hardware and features.
 
 <p>
 
 Visit the [Get Started - ESP32](/03_Get_Started/00_Get_started_with_ESP32.md) and [Get Started - RP2040](/03_Get_Started/00_Get_started_with_RP2040.md) sections to learn how to start using your UDOO KEY.
-
----
-
-*In order to prevent damages to your board ... **#FIXME***
-
----
 
 ## Lineup
 

@@ -24,9 +24,9 @@ Below the full technical specifications
 ## Resources
 
 In addition to this guide, several ones are available online:
-+ for a full explanation of the UDOO KEY’s hardware download the [UDOO KEY User Manual](http://example.com)     **#FIXME**
++ for a full explanation of the UDOO KEY’s hardware download the [UDOO KEY User Manual](http://example.com)
 + see the [Get Started - ESP32](/03_Get_Started/00_Get_started_with_ESP32.md) and [Get Started - RP2040](/03_Get_Started/00_Get_started_with_RP2040.md) sections for all the useful information for a quick installation
-+ [here](http://example.com) you can find the schematics file for the UDOO KEY                                  **#FIXME**
++ [here](http://example.com) you can find the schematics file for the UDOO KEY
 + [official ESP32 development framework](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/index.html)
 + [Raspberry PI PICO datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
 + [Raspberry PI PICO C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
