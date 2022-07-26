@@ -56,8 +56,6 @@ Open a terminal and type:
 :~/ws/esp$ idf.py create-project blinker
 :~/ws/esp$ cd blinker/main
 :~/ws/esp/blinker/main$ 
-# Now paste the content of this file https://example.com on the blinker.c file that you can find in the current folder
-#   It is the entry-point of your firmware and contains the instruction to perform the actions we want
 ```
 
 Open the `blinker.c` file inside current folder and copy the below content inside it.  
