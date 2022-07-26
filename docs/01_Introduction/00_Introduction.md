@@ -1,83 +1,96 @@
 
-# UDOO BLU
+# UDOO KEY
 
-**UDOO BLU** is a natural wireless I/O extension for IoT projects. This module features:
+The **UDOO KEY** is a fully programmable board combining **Raspberry Pi RP2040** microcontroller and **ESP32-WROVER-E** module from Espressif, coming together into a single, powerful solution of just 130 x 40 x 10.9 mm. UDOO KEY allows you to either use these two MCUs independently or to combine them, exploiting their unique features to realize infinite new applications. 
 
-* Bluetooth Low Energy device
-* ZigBee and 6LoWPAN;
-* 3 user configurable LEDs (Red, Green, Yellow);
-* 8 digital GPIOs, 6 available ADCs!
-* 2 user Buttons
-* Powered via button cell!
-* It has snap-in connectors to allow a cascade configuration with all the [UDOO BRICKS](https://www.udoo.org/udoo-bricks/)!
+</p>
 
-Download the [UDOO BLU datasheet](https://www.udoo.org/download/files/datasheets/datasheet_blu_bricks.pdf) here.
+The Pico-compatible part of the UDOO KEY is built upon an **RP2040 microcontroller** by Raspberry Pi Foundation, dual Arm Cortex-M0+, with a QSPI 8MB Flash, a 133MHz clock and 264KB of on-chip SRAM. It is especially suitable for machine learning, motor control, and audio applications.
 
-<hr/>
+</p>
 
-<span class="label label-warning">Heads up!</span> In order to prevent damages to your board, remember to:
+The fully programmable ESP32 module, on the other hand, is an **ESP32-WROVER-E** based on a dual-core Xtensa 32-bit LX6, with a 16MB flash memory and an 8MB PSRAM. The ESP32 on board is also a Wi-Fi, Bluetooth and Bluetooth Low Energy module, thus providing the UDOO KEY with full wireless connectivity.
 
-* Never provide more than 3.3V in input to the GPIOs
-* Never keep the board in touch with metal objects or surfaces while it is powered up
+</p>
 
-<hr/>
+The two microcontrollers can communicate via **serial port** or **SWD interface**. Both can be programmed using different environments, such as TinyML, TensorFlow Lite, MicroPython, C/C++, Arduino IDE, and many more, giving you plenty of options to streamline your AI application. The UDOO KEY is also designed to natively support **Clea**, the AI platform by SECO Mind for deploying AI models and applications over a fleet of IoT devices through over-the-air updates.
 
-<img src="../img/udoo_blu_hor.png" alt="UDOO BLU" class="img-responsive" >
+<p>
+
+Download the [User Manual](http://example.com/) to have a more complete explanation of the UDOO KEY hardware and features.      **#FIXME**
+
+<p>
+
+Visit the [Get Started - ESP32](/03_Get_Started/00_Get_started_with_ESP32.md) and [Get Started - RP2040](/03_Get_Started/00_Get_started_with_RP2040.md) sections to learn how to start using your UDOO KEY.
+
+---
+
+*In order to prevent damages to your board ... **#FIXME***
+
+---
+
+## Lineup
+
+The UDOO KEY retail line up consists of two models, which are mainly distinguished by the availability of on-board sensors:
++ UDOO KEY **Basic**
++ UDOO KEY **Pro**
+
+![Image of both boards](/img/udoo_key_base_pro.png)
+
+Check the [Board Versions](/02_Hardware_References/01_Full_specs.md#page_Board-versions) section to see the differences between the two.  
+Moreover, by looking at the following video, you can have a brief overview of the UDOO board and its components.
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/hkM1PGc3sjU"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 
-### Technical specifications
+---
 
-<hr/>
+## Technical specifications
 
-<img src="../img/blu_pins.png" alt="UDOO Boards" class="img-responsive pull-right" height="441px" width="350px"  style="margin-bottom:20px; margin-left:30px;">
 
-* Texas Instruments CC2650 ARM Cortex M3
-* Networking
-  * Bluetooth Low Energy (BLE) v4.1
-  * 6LoWPAN
-* Integrated sensors
-  * FX0S8700CQ Acceleromter+Magnetometer
-  * FXAS21002C Gyroscope+Temperature
-  * 1x Sensors Snap-In I2C connector for UDOO Bricks
-* 3x User Configurable LEDs (Red, Yellow, Green)
-* Dimensions: 45mm x35mm (1.77″ x 1.37″)
-* Digital I/O Pins:	8x Digital GPIOs
-* Analog Input Pins:	6x Available ADCs
-* 2x Buttons
-* Other Interfaces:
-  * 1x I2C
-  * 1x SPI
-  * 1x UART Serial
-* Power Supply:
-  * Battery Holder (button-cell) CR2032 - 3V
-  * External power supply - min 3.3V - max 5.5V
+*Power supply*: 5V DC  
+*Dimensions*: 130 x 40 x 10.9 mm  
+*Sensors*:
+  + On-chip temperature sensor
+  + 9-axis IMU motion sensor (*only on UDOO KEY Pro*)
+  + Omnidirectional Digital Microphone (*only on UDOO KEY Pro*)
 
-<hr/>
+</p>
+
+|Microcontrollers| **ESP32** | **RP2040** |
+|---|---|---|
+|*Memory size*| 8 MB SPI Pseudo static RAM |  264 KB SPI Pseudo static RAM |
+|*Flash size*|  16 MB internal SPI flash | 64 M-bit external QSPI flash |
+|*Connectivity*| Wi-Fi 802.11 b/g/n (802.11n up to 150 Mbps),  Bluetooth v4.2 BR/EDR and BLE specification| - |
+|*Peripherals*| UEXT connector (I2C, SPI, UART) | 26 multifunction GPIO pins |
+
+---
 
 ## Community
-* Official web site [www.udoo.org](https://www.udoo.org)
-* Official forum [www.udoo.org/forum](https://www.udoo.org/forum/index.php)
++ Official web site: [www.udoo.org](https://www.udoo.org)
++ Official forum: [www.udoo.org/forum](https://www.udoo.org/forum)
 
 ### Forums
+
 The official UDOO forums can be found at [www.udoo.org/forum](https://www.udoo.org/forum)
 
-The forum search facility has been tweaked to allow more general searching. <b>Please</b> do a search before making a post as the issue may already have been raised and answered.
+The forum search facility has been tweaked to allow more general searching. **Please** do a search before making a post as the issue may already have been raised and answered.
 
 ### IRC channel
+
 There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of your choice, use server information: `irc.freenode.net`. Room name is `#udoo`.
 
-
 ### Social networks
- * [Facebook fan page](http://www.facebook.com/udooboard)
- * [Twitter](http://twitter.com/UDOO_Board)
- * [Google+](https://plus.google.com/u/0/110742692974455430878/posts)
- * [YouTube](http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg)
 
-
-<!-- Google Code -->
-<script type="text/javascript">
-var google_conversion_id = 983836026;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-</script>
-</noscript>
++ [Facebook page](http://www.facebook.com/udooboard)
++ [Telegram group](https://t.me/udooint)
++ [YouTube](http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg)
++ [Twitter](http://twitter.com/UDOO_Board)
++ [Google+](https://www.instagram.com/udoo_board/)
