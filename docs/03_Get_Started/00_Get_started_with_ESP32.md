@@ -2,7 +2,7 @@
 
 After speaking a long about technical specifications and boards components, let's start doing things in order to load firmware in flash memory of microcontrollers!
 
-Now we will install all **dependencies** and **framworks**, in Linux-based and Windows OSs, for ESP32 microcontroller and start **programming** it.  
+Now we will install all **dependencies** and **frameworks**, in Linux-based and Windows OSs, for ESP32 microcontroller and start **programming** it.  
 The framework we chosen is the official one, the [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html), but several other frameworks can be used to programming the ESP32. Among the others the most used are [MicroPython](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html) and [Arduino](https://github.com/espressif/arduino-esp32). Chose the one you prefer!
 
 
@@ -26,20 +26,20 @@ Open a terminal and type the following commands:
 
 ``` bash
 # Install the essential dependencies
-:~$ sudo apt install cmake wget git python3 python3-pip virtualenv
+sudo apt install cmake wget git python3 python3-pip virtualenv
 # Create the workspace folder (if it doesn't exist yet), clone the repository of ESP-IDF version 4.4.1 and install it
-:~$ mkdir ~/ws/esp
-:~$ cd ~/ws/esp
-:~/ws/esp$ git clone --recursive https://github.com/espressif/esp-idf.git -b 4.4.1
-:~/ws/esp/esp-idf$ cd esp-idf
-:~/ws/esp/esp-idf$ bash install.sh esp32
+mkdir ~/ws/esp
+cd ~/ws/esp
+git clone --recursive https://github.com/espressif/esp-idf.git -b 4.4.1
+cd esp-idf
+bash install.sh esp32
 
 # Before programming the ESP32, a set of environment variables need to be defined in the shell environment
 #   Let's create an alias to easily load them and invoke it for each terminal you need
-:~/ws/esp/esp-idf$ cd ~
-:~$ echo "alias get_idf='. $HOME/ws/esp/esp-idf/export.sh'" >> ~/.bash_aliases
-:~$ source $HOME/.bash_aliases
-:~$ get_idf
+cd ~
+echo "alias get_idf='. $HOME/ws/esp/esp-idf/export.sh'" >> ~/.bash_aliases
+source $HOME/.bash_aliases
+get_idf
 # The environment now is correctly loaded!
 ```
 
@@ -50,19 +50,18 @@ Open a terminal and type:
 
 ``` bash
 # First of all load the needed variables by calling the alias
-:~$ get_idf
-:~$ cd ~/ws/esp
+get_idf
+cd ~/ws/esp
 # Create the project
-:~/ws/esp$ idf.py create-project blinker
-:~/ws/esp$ cd blinker/main
-:~/ws/esp/blinker/main$ 
+idf.py create-project blinker
+cd blinker/main
 ```
 
 Open the `blinker.c` file inside current folder and copy the below content inside it.  
 It is the entry-point of your firmware and contains the instruction to perform the actions we want.
 
-``` C
 
+``` C
 #include <stdio.h>
 
 #include <driver/gpio.h>
@@ -109,8 +108,8 @@ Finally you have to put the target MCU in flash mode, so close the jumper **JP2*
 
 To do that, in a terminal with environment variales already loaded, type the following commands:
 ``` bash
-:~$ cd ~/ws/esp/blinker
-:~/ws/esp/blinker$ idf.py -p <PORT> build flash monitor
+cd ~/ws/esp/blinker
+idf.py -p <PORT> build flash monitor
 ```
 
 The above command will build the entire project (`build` command), will load the firmware into the ESP flash memory (`flash` command) and will monitor the output produced by the microcontroller and sent via the serial connection (`monitor` command).  

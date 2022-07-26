@@ -26,7 +26,7 @@ First of all you need to install `python3` and `python3-pip`, but they are alrea
 You need also to install the `rshell` python package. It s needed to upload the python code and interact with the MicroPython interpreter running on the MCU.
 In a command line, type:
 ```bash
-:~$ python3 -m pip install rshell
+python3 -m pip install rshell
 ```
 
 Now upload the MicroPython firmware into RP flash.  
@@ -53,13 +53,13 @@ while True :
 
 To load the script on your board, move to the folder containing the `main.py` file using a command line (let's call it `rp` placed in `ws` folder), and type the following commands:
 ```bash
-:~$ cd ws/rp
+cd ws/rp
 # Invoke the rshell program
-:~/ws/rp$ rshell
+rshell
 # It will automatically find the board, if correctly plugged
 
 # Now you can copy the main.py source file by copying it into /pyboard folder which represent the connected board
-/root/ws/rp> cp main.py /pyboard/main.py
+cp main.py /pyboard/main.py
 ```
 
 To apply changes, close the `rshell` program and reset the board with on-board button **SW1**.
