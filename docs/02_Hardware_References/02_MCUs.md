@@ -93,7 +93,6 @@ For further information on RP2040, please refer to the dedicated page on [raspbe
 
 **Pin number:**
 + **10** is reserved for RP2040 reset by ESP32
-+ **15** is reserved to 
 + **16** provide 3.3V DC (315mA) in output
 + **17** is not connected
 + **19** provide 5V DC (500mA) filtered from USB Type-C connector (CN1)
@@ -126,9 +125,9 @@ The pin number 10 on **P2** header (**RPI_RESET**) is connected to ESP pin **IO2
 So, to reset the Raspberry microcontroller from ESP, let's set the output level LOW and then move to HIGH.
 
 Moreover, to enable the RP2040 OTA programming, its SWD lines are connected to ESP pins as shown in the following table.  
-Since the RP2040 can be programmed also trough on-board SWD header **P5**, the user must ensure that, while he want to use such interface, the GPIO **IO5** level is set to **HIGH**. To use external headers, such GPIO must be set to **LOW** level.
+Since the RP2040 can be programmed also through on-board SWD header **P5**, the user must ensure that, while he want to use such interface, the GPIO **IO5** level is set to **HIGH**. To use external headers, such GPIO must be set to **LOW** level.
 
-Keep in mind that the IMU snsor is connected to both microcontrollers and, to select which of them can interact with it, a jumper must be inserted as explained in the following table. As explained in the schematic file, pin number 1 is the more closer to the RP2040 and pin number 3 is the more closer to the ESP32. 
+Keep in mind that the IMU sensor is connected to both microcontrollers and, to select which of them can interact with it, a jumper must be inserted as explained in the following table. As explained in the schematic file, pin number 1 is the more closer to the RP2040 and pin number 3 is the more closer to the ESP32. 
 
 | Jumper position | Microcontroller enabled |
 | ---             | ---                     |
