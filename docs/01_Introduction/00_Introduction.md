@@ -17,7 +17,7 @@ The two microcontrollers can communicate via **serial port** or **SWD interface*
 
 <p>
 
-Download the [User Manual](http://example.com/) to have a more complete explanation of the UDOO KEY hardware and features.
+Download the [User Manual](https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_MANUAL.pdf) to have a more complete explanation of the UDOO KEY hardware and features.
 
 <p>
 
