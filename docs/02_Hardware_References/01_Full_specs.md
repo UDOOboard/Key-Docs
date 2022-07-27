@@ -58,7 +58,7 @@ The UDOO KEY features four useful pinout header.
 
 The pin header connector **P3** on the top of the board is compliant with the **UEXT** specification and is accessible from the ESP32. It exposes the I2C, UART, and SPI interfaces.
 
-![P3 pin header](/img/p3_header.png)
+![P3 pin header](/img/p3_header.jpg)
 
 </p>
 
