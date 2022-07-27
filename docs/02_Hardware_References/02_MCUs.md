@@ -13,6 +13,7 @@ The sleep current of the ESP32 chip is less than 5 µA, making it suitable for b
 For further information on Espressif ESP32, please refer to the dedicated page on [espressif.com](https://espressif.com).
 
 In order to be able to interface the ESP32 with external integrated circuits, the target MCU is equipped with an UEXT connector following the pin map as reported in the table below.
+In order to be able to interface the ESP32 with external integrated circuits, the target MCU is equipped with an UEXT connector following the pin map as reported in the table below.
 
 | Pin number | Schematic pin name | ESP GPIO | Description |
 | ---        | ---  | ---      | ---         |
@@ -24,7 +25,7 @@ In order to be able to interface the ESP32 with external integrated circuits, th
 |6|ESP32_SDA|GPIO18|I²C data line|
 |7|SPI_MISO|GPIO35|SPI master input - slave output|
 |8|SPI_MOSI|GPIO12|SPI master output - slave input|
-|9||SPI_SCK|GPIO14|SPI clock|
+|9|SPI_SCK|GPIO14|SPI clock|
 |10|SPI_CS|GPIO15|SPI chip select|
 
 
