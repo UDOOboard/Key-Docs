@@ -1,16 +1,16 @@
 
 # ESP32
 
-The UDOO KEY is powered by Espressif’s **ESP32-WROVER-E** MCU module, a powerful and versatile platform for Edge AI applications, ranging from low-power sensor networks to the most demanding tasks, such as voice encoding, music streaming and MP3 decoding. This module is provided with a PCB antenna.  
+The UDOO KEY is powered by Espressif **ESP32-WROVER-E** MCU module, a powerful and versatile platform for Edge AI applications, ranging from low-power sensor networks to the most demanding tasks, such as voice encoding, music streaming and MP3 decoding. This module is provided with a PCB antenna.  
 This fully programmable microcontroller is based on a **dual-core Xtensa 32-bit LX6**, with a 16 MB internal SPI flash memory, an additional 8 MB SPI Pseudo Static RAM (PSRAM), Wi-Fi and Bluetooth.
 
 The core of the module is the **ESP32-D0WD-V3** chip, which is designed to be scalable and adaptive. It features two CPU cores that can be individually controlled, and the CPU clock frequency is adjustable from 80 MHz to 240 MHz. The chip is also provided with a low-power co-processor that can be used instead of the CPU to save power while performing tasks that do not require much computing power, such as perihperals monitoring.
 
-Thanks to the ESP32 on board, you get full Wi-Fi 802.11b/g/n connectivity, Bluetooth and BLE v4.2. This ensures the UDOO KEY’s extreme versatility: the Wi-Fi allows to set up direct connection to the internet through a Wi-Fi router, while using the Bluetooth users can connect to their phones or broadcast low energy beacons for its detection.
+Thanks to the ESP32 on board, you get full Wi-Fi 802.11b/g/n connectivity, Bluetooth and BLE v4.2. This ensures the UDOO KEY extreme versatility: the Wi-Fi allows to set up direct connection to the internet through a Wi-Fi router, while using the Bluetooth users can connect to their phones or broadcast low energy beacons for its detection.
 
-Mind you: the ESP32 on board is not just a Wi-Fi, BT & BLE module. On the contrary, it gives you full access to the firmware of ESP32 and you can program it as you please. 
+Note that the ESP32 on board is not just a Wi-Fi, BT & BLE module. It gives you full access to the firmware of ESP32 and you can program it as you please. 
 The sleep current of the ESP32 chip is less than 5 µA, making it suitable for battery powered and wearable electronics applications. The module supports a data rate of up to 150 Mbps, 802.11b at 13.5dBm, and 802.11g/n at 18.5 dBm of output power to the antenna to ensure the widest physical range. The module thus offers industry-leading specifications and the best performance for electronic integration, range, power consumption, and connectivity. Secure (encrypted) over the air (OTA) upgrade is also supported, so that users can upgrade their products even after their release, at minimum cost and effort.
-For further information on Espressif’s ESP32, please refer to the dedicated page on [espressif.com](https://espressif.com).
+For further information on Espressif ESP32, please refer to the dedicated page on [espressif.com](https://espressif.com).
 
 In order to be able to interface the ESP32 with external integrated circuits, the target MCU is equipped with an UEXT connector following the pin map as reported in the table below.
 
@@ -132,7 +132,7 @@ Moreover, to enable RP2040 OTA programming, its SWD lines are connected to ESP p
 
 Since the RP2040 can be programmed also through on-board SWD header **P5**, the user must ensure that, while he want to use such interface, the GPIO **IO5** level is set to **HIGH**. To use external headers, such GPIO must be set to **LOW** level.
 
-Keep in mind that the IMU sensor is connected to both microcontrollers and, to select which of them can interact with it, a jumper must be inserted as explained in the following table. As explained in the schematic file, pin number 1 is the more closer to the RP2040 and pin number 3 is the more closer to the ESP32. 
+Keep in mind that the IMU sensor is connected to both microcontrollers and, to select which of them can interact with it, a jumper must be inserted as explained in the following table. As explained in the schematic file, pin number 1 is the closest to the RP2040 and pin number 3 is the closest to the ESP32. 
 
 | Jumper position | Microcontroller enabled |
 | ---             | ---                     |

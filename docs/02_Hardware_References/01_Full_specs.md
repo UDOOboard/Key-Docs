@@ -24,7 +24,7 @@ Below the full technical specifications
 ## Resources
 
 In addition to this guide, several ones are available online:
-+ for a full explanation of the UDOO KEY’s hardware download the [UDOO KEY User Manual](https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_MANUAL.pdf)
++ for a full explanation of the UDOO KEY hardware download the [UDOO KEY User Manual](https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_MANUAL.pdf)
 + see the [Get Started - ESP32](/03_Get_Started/00_Get_started_with_ESP32.md) and [Get Started - RP2040](/03_Get_Started/00_Get_started_with_RP2040.md) sections for all the useful information for a quick installation
 + [here](https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_SCHEMATICS.pdf) you can find the schematics file for the UDOO KEY
 + [official ESP32 development framework](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/index.html)
@@ -34,8 +34,7 @@ In addition to this guide, several ones are available online:
 
 ## Board versions
 
-The UDOO KEY is available in two versions: **UDOO KEY Basic** and **UDOO KEY Pro**.  
-The only difference between the two is whether or not the board is equipped with sensors.
+The UDOO KEY is available in two versions: **UDOO KEY Basic** and **UDOO KEY Pro**.
 
 The **UDOO KEY Basic** mounts no sensors, it is therefore perfect for those who want full control of their project, as it allows expansion with modules of developer’s choice.  
 The **UDOO KEY Pro** mounts two powerful sensors: a 9-axis IMU and a digital microphone.

@@ -34,7 +34,7 @@ Download its latest release from [this page](https://micropython.org/download/rp
 Now, once the file is downloaded, put the microcontroller in flash mode: firstly close the jumper **JP1** to allow the computer to interact with RP and connect the board to your PC using an USB Type-C cable. Now keep pressed the button **SW2** labeled as `BOOTSEL` and push the reset button **SW1**. After these operations, the board is detected as a removable device by your computer.  
 Simply copy the just downloaded `.uf2` file and paste it into the removable drive. In this way you can program the Raspberry MCU!
 
-Now that the MicroPython framework is loaded, crete a file called main.py and copy the following code on it.  
+Now that the MicroPython framework is loaded, create a file called main.py and copy the following code on it.  
 It will make the LED attached on pin 25 blink each 750 milliseconds!
 
 ```python
@@ -68,6 +68,6 @@ At this moment the LED will start blinking!
 
 ---
 
-To implement complex project using MicroPyhton you can find [**its official documentation here**](https://docs.micropython.org/en/latest/) and the documentation for [**RP2040 specific functionalities here**](https://docs.micropython.org/en/latest/library/rp2.html).
+To implement complex project using MicroPython you can find [**its official documentation here**](https://docs.micropython.org/en/latest/) and the documentation for [**RP2040 specific functionalities here**](https://docs.micropython.org/en/latest/library/rp2.html).
 
 Enjoy with your UDOO KEY!
