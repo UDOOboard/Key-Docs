@@ -2,7 +2,7 @@
 
 ## Overview
 
-![UDOO KEY on-board components](/img/udoo_key_on_board_components.png)
+<img src="../img/udoo_key_on_board_components.png" alt="UDOO KEY on-board components"></img>
 
 In the above image is represented the name of on-board components used in following sections and in the schematic file.  
 Following the role of each component.
@@ -21,4 +21,4 @@ Following the role of each component.
 
 ## Block diagram
 
-![UDOO KEY block diagram](/img/udoo_key_block_diagram.png)
+<img src="../img/udoo_key_block_diagram.png" alt="UDOO KEY block diagram"></img>
