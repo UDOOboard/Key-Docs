@@ -1,8 +1,8 @@
 # UDOO Key Documentation
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/UDOOboard/Vision-Docs/LICENSE)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/UDOOboard/Key-Docs/LICENSE)
 
-This repository contains the source code for the documentation hosted at [www.udoo.org/docs-vision/](http://www.udoo.org/docs-vision/).
+This repository contains the source code for the documentation hosted at [https://www.udoo.org/docs-key](https://www.udoo.org/docs-key).
 
 
 ## Build the documentation locally
@@ -18,4 +18,3 @@ Then build the documentation with
 To serve the documentation from a development webserver, run
 
     cd static && php -S localhost:8080
-
