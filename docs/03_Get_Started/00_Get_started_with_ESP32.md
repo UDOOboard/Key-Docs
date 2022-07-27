@@ -41,12 +41,12 @@ cd ~
 echo "alias get_idf='. $HOME/ws/esp/esp-idf/export.sh'" >> ~/.bash_aliases
 source $HOME/.bash_aliases
 get_idf
-# The environment now is correctly loaded!
+# The environment is correctly loaded!
 ```
 
 ---
 
-Now it's the moment to create and load on your board the first program that makes the two on-board LEDs blink!  
+It's the moment to create and load on your board the first program that makes the two on-board LEDs blink!  
 Open a terminal and type:
 
 ``` bash
@@ -128,7 +128,8 @@ Firstly download the installer [here](https://dl.espressif.com/dl/esp-idf/?idf=4
 After the installation, you can open a **ESP-IDF prompt** by searching for **ESP-IDF 4.4 CMD** entry in the Start menu.  
 Once launched, a new prompt is executed with the environment already loaded.
 
-Now you can create a project, copy the code and flash the ESP32 in the same way explained for the Linux OS using an **ESP-IDF command prompt**.
+If everything has been installed fine, you can create a project. To do that copy the code and flash the ESP32
+in the same way explained for the Linux OS using an **ESP-IDF command prompt**.
 
 ---
 

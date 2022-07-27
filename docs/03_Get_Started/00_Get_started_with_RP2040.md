@@ -1,6 +1,4 @@
 
-We learned how to program the ESP32 microcontroller and now it's time to get your hands on the RP2040!
-
 We will install all the **dependencies**, in both Linux-based and Windows OSs, to play with the **MicroPython** framework.
 We have chosen this development environment because it's easy to learn and has a great support from the community.
 
@@ -31,11 +29,11 @@ python3 -m pip install rshell
 ```
 
 Now upload the MicroPython firmware into RP flash.  
-Download its latest release from [this page](https://micropython.org/download/rp2-pico/).  
-Now, once the file is downloaded, put the microcontroller in flash mode: firstly close the jumper **JP1** to allow the computer to interact with RP and connect the board to your PC using an USB Type-C cable. Now keep pressed the button **SW2** labeled as `BOOTSEL` and push the reset button **SW1**. After these operations, the board is detected as a removable device by your computer.  
+Firstly, download its latest release from [this page](https://micropython.org/download/rp2-pico/).  
+Then put the microcontroller in flash mode: close the jumper **JP1** to allow the computer to interact with RP and connect the board to your PC using an USB Type-C cable. Keep pressed the button **SW2** labeled as `BOOTSEL` and push the reset button **SW1**. After these operations, the board is detected as a removable device by your computer.  
 Simply copy the just downloaded `.uf2` file and paste it into the removable drive. In this way you can program the Raspberry MCU!
 
-Now that the MicroPython framework is loaded, create a file called main.py and copy the following code on it.  
+Once the MicroPython framework has been loaded, create a file called main.py and copy the following code on it.  
 It will make the LED attached on pin 25 blink each 750 milliseconds!
 
 ```python
