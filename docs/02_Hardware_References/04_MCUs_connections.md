@@ -19,8 +19,8 @@ Since the RP2040 can be programmed also through on-board SWD header **P5**, the 
 
 Keep in mind that the IMU sensor is connected to both microcontrollers and, to select which of them can interact with it, a jumper must be inserted as explained in the following table. As explained in the schematic file, pin number 1 is the closest to the RP2040 and pin number 3 is the closest to the ESP32. 
 
-| Jumper position | Microcontroller enabled |
+| Jumper position | IMU Sensor connected to |
 | ---             | ---                     |
 | Not placed      | ESP32 (Default)         |
 | Pin 1-2         | RP2040                  |
-| Ping 2-3        | ESP32                   |
+| Pin 2-3         | ESP32                   |
