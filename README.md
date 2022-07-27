@@ -1,6 +1,6 @@
 # UDOO Key Documentation
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/UDOOboard/Key-Docs/LICENSE)
+![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://github.com/UDOOboard/Key-Docs/LICENSE)
 
 This repository contains the source code for the documentation hosted at [https://www.udoo.org/docs-key](https://www.udoo.org/docs-key).
 
