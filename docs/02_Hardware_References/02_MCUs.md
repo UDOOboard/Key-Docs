@@ -23,8 +23,8 @@ In order to be able to interface the ESP32 with external integrated circuits, th
 |4|EXT_UART2_RX|GPIO26|UART reception line|
 |5|ESP32_SCL|GPIO21|I²C clock line|
 |6|ESP32_SDA|GPIO18|I²C data line|
-|7|SPI_MISO|GPIO35|SPI master input - slave output|
-|8|SPI_MOSI|GPIO12|SPI master output - slave input|
+|7|SPI_MISO|GPIO35|SPI Microcontroller in / Sensor out|
+|8|SPI_MOSI|GPIO12|SPI Microcontroller out / Sensor in|
 |9|SPI_SCK|GPIO14|SPI clock|
 |10|SPI_CS|GPIO15|SPI chip select|
 
