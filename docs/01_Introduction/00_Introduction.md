@@ -29,7 +29,7 @@ The UDOO KEY retail line up consists of two models, which are mainly distinguish
 + UDOO KEY **Basic**
 + UDOO KEY **Pro**
 
-![Image of both boards](/img/udoo_key_base_pro.png)
+<img src="../img/udoo_key_base_pro.png" alt="Image of both boards"></img>
 
 Check the [Board Versions](/02_Hardware_References/01_Full_specs.md#page_Board-versions) section to see the differences between the two.  
 Moreover, by looking at the following video, you can have a brief overview of the UDOO board and its components.
