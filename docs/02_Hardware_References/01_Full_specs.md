@@ -58,14 +58,14 @@ The UDOO KEY features four useful pinout header.
 
 The pin header connector **P3** on the top of the board is compliant with the **UEXT** specification and is accessible from the ESP32. It exposes the I2C, UART, and SPI interfaces.
 
-<img src="/img/p3_header.jpg" alt="UDOO KEY P3 header" style="width:1000px;"></img>
+<img src="../img/p3_header.jpg" alt="UDOO KEY P3 header" style="width:1000px;"></img>
 
 </p>
 
 The two headers on the bottom of the board, **P1** and **P2**, are 100% compatible with Raspberry Pi Pico, both hardware and software-wise – except for two GPIO pins used for UART mapping, namely *GP0* and *GP1*, to ensure the communication between the ESP32 and the RP2040. This means that each and any expansion hardware as well as software built for Raspberry Pi Pico will work out of the box on the UDOO KEY.  
 Finally, on **P5** header are connected SWD lines (*SWDCLK*, *GND* and *SWDIO*) to easly program the RP2040, as for the Raspberry Pi Pico.
 
-<img src="/img/p1_p2_p5_headers.png" alt="UDOO KEY P1, P2 and P5 header" style="width:1000px;"></img>
+<img src="../img/p1_p2_p5_headers.png" alt="UDOO KEY P1, P2 and P5 header" style="width:1000px;"></img>
 
 
 ## Power source
