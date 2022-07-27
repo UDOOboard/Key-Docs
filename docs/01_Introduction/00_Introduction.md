@@ -34,6 +34,7 @@ The UDOO KEY retail line up consists of two models, which are mainly distinguish
 Check the [Board Versions](/02_Hardware_References/01_Full_specs.md#page_Board-versions) section to see the differences between the two.  
 Moreover, by looking at the following video, you can have a brief overview of the UDOO board and its components.
 <iframe
+    style="border:none;overflow:hidden;display:block;margin:0 auto;"
     width="640"
     height="480"
     src="https://www.youtube.com/embed/hkM1PGc3sjU"

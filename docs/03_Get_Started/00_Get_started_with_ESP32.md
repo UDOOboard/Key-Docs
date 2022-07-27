@@ -11,6 +11,7 @@ The framework we chose is the official one, the [ESP-IDF](https://docs.espressif
 [**Here**](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html) you can find the official documentation that explains with many more details the installation. For a quick guide read below!  
 Additionally you can watch in the video below the full installation procedure explained and executed on a PC.
 <iframe
+    style="border:none;overflow:hidden;display:block;margin:0 auto;"
     width="640"
     height="480"
     src="https://www.youtube.com/embed/HRT5CTC8D_4"

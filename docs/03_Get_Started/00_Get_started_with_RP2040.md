@@ -11,6 +11,7 @@ To write firmwares for the RP2040, you can use the official [C/C++ SDK](https://
 
 We have recorded a video in which all steps described below are directly executed on a PC.
 <iframe
+    style="border:none;overflow:hidden;display:block;margin:0 auto;"
     width="640"
     height="480"
     src="https://www.youtube.com/embed/LbhPpFTLdg0"
