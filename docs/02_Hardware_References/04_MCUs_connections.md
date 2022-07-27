@@ -5,7 +5,7 @@ Such connection uses **GPIO0** (TX) and **GPIO1** (RX) on RP2040 and, on ESP32, 
 Keep in mind that RP GPIO0 is connected to ESP IO19 and, vice versa, GPIO1 is connected with IO22.  
 Thanks to this connection you can exchange between the MCUs whichever stream of bytes. 
 
-There can be exist cases in which the RP2040 must be restarted remotely: you can perform this operation from the ESP32.  
+There are cases in which the RP2040 must be restarted remotely: you can perform this operation from the ESP32.  
 The pin number 10 on **P2** header (**RPI_RESET**) is connected to ESP pin **IO23**. By setting its output level **LOW** the RP2040 execution is disabled, while, setting output level **HIGH**, the RP2040 execution is restored.  
 So, to reset the Raspberry microcontroller from ESP, let's set the output level LOW and then move to HIGH.
 
