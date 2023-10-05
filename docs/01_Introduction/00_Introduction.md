@@ -88,4 +88,4 @@ There is an (unofficial) UDOO discussion channel on IRC. Using the IRC client of
 + [Telegram group](https://t.me/udooint)
 + [YouTube](http://www.youtube.com/channel/UCXv5UyGn5jArK8xOAmuSeHg)
 + [Twitter](http://twitter.com/UDOO_Board)
-+ [Google+](https://www.instagram.com/udoo_board/)
++ [Instagram](https://www.instagram.com/udoo_board/)
