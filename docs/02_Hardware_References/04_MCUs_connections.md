@@ -1,8 +1,8 @@
 
 
 To let you to create projects that leverage the power of both microcontrollers, they are connected through a **serial connection**.  
-Such connection uses **GPIO0** (TX) and **GPIO1** (RX) on RP2040 and, on ESP32, **IO19** (RX) and **IO22** (TX). On schematic file those connections are labeled with *RPI_UART_TX* and *RPI_UART_RX*.  
-Keep in mind that RP GPIO0 is connected to ESP IO19 and, vice versa, GPIO1 is connected with IO22.  
+Such connection uses **GPIO0** (TX) and **GPIO1** (RX) on RP2040 and, on ESP32, **IO19** (TX) and **IO22** (RX). On schematic file those connections are labeled with *RPI_UART_TX* and *RPI_UART_RX*.  
+Keep in mind that RP GPIO0 is connected to ESP IO22 and, vice versa, GPIO1 is connected with IO19.  
 Thanks to this connection you can exchange between the MCUs whichever stream of bytes. 
 
 There are cases in which the RP2040 must be restarted remotely: you can perform this operation from the ESP32.  
