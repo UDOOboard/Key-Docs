@@ -1,8 +1,7 @@
 
-<div style="padding: 20px; background-color: #04AA6D; color: white; margin-bottom: 15px;">
-This is the new version of the ESP-IDF getting started guide, using a newer version and with corrected typos. If you want to check the older version, go to <a href="/Get_Started/Get_started_with_ESP32_deprecated.html">this page</a>.
+<div style="padding: 20px; background-color: #FC9800; color: white; margin-bottom: 15px;">
+This page has been deprecated! Go to <a href="/Get_Started/Get_started_with_ESP32.html">this page</a> to read the guide with ESP-IDF version 5.0.4 and corrected typos.
 </div>
-
 
 After speaking a long about technical specifications and boards components, let's start doing things in order to load firmware in flash memory of microcontrollers!
 
@@ -13,6 +12,17 @@ The framework we chose is the official one, the [ESP-IDF](https://docs.espressif
 ## Linux
 
 [**Here**](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html) you can find the official documentation that explains with many more details the installation. For a quick guide read below!  
+Additionally you can watch in the video below the full installation procedure explained and executed on a PC.
+<iframe
+    style="border:none;overflow:hidden;display:block;margin:0 auto;"
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/HRT5CTC8D_4"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 In addition to following packages, a text editor is required: you can use `VS Code` or `emacs` or whatever you want!
 
@@ -21,10 +31,10 @@ Open a terminal and type the following commands:
 ``` bash
 # Install the essential dependencies
 sudo apt install cmake wget git python3 python3-pip virtualenv
-# Create the workspace folder (if it doesn't exist yet), clone the repository of ESP-IDF version 5.0.4 and install it
+# Create the workspace folder (if it doesn't exist yet), clone the repository of ESP-IDF version 4.4.1 and install it
 mkdir ~/ws/esp
 cd ~/ws/esp
-git clone --recursive https://github.com/espressif/esp-idf.git -b v5.0.4
+git clone --recursive https://github.com/espressif/esp-idf.git -b 4.4.1
 cd esp-idf
 bash install.sh esp32
 
@@ -65,12 +75,11 @@ It is the entry-point of your firmware and contains the instruction to perform t
 #define B_LED_PIN GPIO_NUM_32
 #define Y_LED_PIN GPIO_NUM_33
 
-void led_blinker_task (void)
-{
-    esp_rom_gpio_pad_select_gpio(B_LED_PIN);
-    gpio_set_direction (B_LED_PIN, GPIO_MODE_OUTPUT);
 
-    esp_rom_gpio_pad_select_gpio(Y_LED_PIN);
+void led_blinker_task () {
+    gpio_pad_select_gpio(B_LED_PIN);
+    gpio_set_direction (B_LED_PIN, GPIO_MODE_OUTPUT);
+    gpio_pad_select_gpio(Y_LED_PIN);
     gpio_set_direction (Y_LED_PIN, GPIO_MODE_OUTPUT);
 
     while (1) {
@@ -91,8 +100,7 @@ void led_blinker_task (void)
 }
 
 
-void app_main(void)
-{
+void app_main(void) {
     xTaskCreate (&led_blinker_task, "led_blinker_task", 1024, NULL, 2, NULL);
 }
 ```
@@ -118,9 +126,9 @@ Let's open the jumper **JP2** and push the reset button **SW3** to see LEDs in a
 ## Windows
 
 For Windows OS installation, Espressif provides an installer which automatically performs everything.  
-Firstly download the installer [here](https://dl.espressif.com/dl/esp-idf/?idf=5.0.4) and launch it.
+Firstly download the installer [here](https://dl.espressif.com/dl/esp-idf/?idf=4.4) and launch it.
 
-After the installation, you can open a **ESP-IDF prompt** by searching for **ESP-IDF 5.0.4 CMD** entry in the Start menu.  
+After the installation, you can open a **ESP-IDF prompt** by searching for **ESP-IDF 4.4 CMD** entry in the Start menu.  
 Once launched, a new prompt is executed with the environment already loaded.
 
 If everything has been installed fine, you can create a project. To do that copy the code and flash the ESP32
