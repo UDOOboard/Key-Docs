@@ -54,7 +54,7 @@ Moreover, by looking at the following video, you can have a brief overview of th
 *Dimensions*: 130 x 40 x 10.9 mm  
 *Sensors*:
   + On-chip temperature sensor
-  + 9-axis IMU motion sensor (*only on UDOO KEY Pro*)
+  + 6-axis IMU motion sensor (*only on UDOO KEY Pro*)
   + Omnidirectional Digital Microphone (*only on UDOO KEY Pro*)
 
 </p>

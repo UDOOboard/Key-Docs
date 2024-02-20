@@ -13,7 +13,7 @@ Below the full technical specifications
 | *Frequency bands* | 2400 ÷ 2483.5 MHz | - |
 | *Bandwidth* | BT / BLE: 1 MHz (79 channels) / 2 MHz (40 channels) | - |
 | *Peripherals* | UART, I²C, SPI on UEXT connector, blue and yellow LEDS, SWD lines to RP2040 | UART, SPI, I²C on P1 and P2 , green LED |
-| *Sensors* | SPK0838HT4H-1 Microphone, shared ICM-20948 IMU | Shared ICM-20948 IMU |
+| *Sensors* | SPK0838HT4H-1 Microphone, shared MPU-6500 IMU | Shared MPU-6500 IMU |
 
 </p>
 
@@ -37,15 +37,15 @@ In addition to this guide, several ones are available online:
 The UDOO KEY is available in two versions: **UDOO KEY Basic** and **UDOO KEY Pro**.
 
 The **UDOO KEY Basic** mounts no sensors, it is therefore perfect for those who want full control of their project, as it allows expansion with modules of developer’s choice.  
-The **UDOO KEY Pro** mounts two powerful sensors: a 9-axis IMU and a digital microphone.
+The **UDOO KEY Pro** mounts two powerful sensors: a 6-axis IMU and a digital microphone.
 
-+ The 9-axis IMU motion sensor, an [`ICM-20948`](https://invensense.tdk.com/products/motion-tracking/9-axis/icm-20948/), combines an accelerometer, a magnetometer and a gyroscope in a single module to streamline a wide array of projects, from robotics and RC cars up to smart bikes and automation. It is connected to the ESP32 via I2C bus. You can decide whether to access the I2C bus via ESP32 or RP2040 through the jumper switch.
++ The 6-axis IMU motion sensor, an [`MPU-6500`](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6500/), combines an accelerometer and a gyroscope in a single module to streamline a wide array of projects, from robotics and RC cars up to smart bikes and automation. It is connected to the ESP32 via I2C bus. You can decide whether to access the I2C bus via ESP32 or RP2040 through the jumper switch.
 + The omnidirectional digital microphone, a [`SPK0838HT4H`](https://www.knowles.com/docs/default-source/default-document-library/spk0838ht4h-1-datasheet-rev-c.pdf?Status=Master&sfvrsn=753576b1_0), is designed for AI-powered sound & voice recognition as well as audio control. It is connected to the ESP32 via I2S bus.
 
 The following table and picture summarize the differences between the UDOO KEY Basic and the UDOO KEY Pro.  
 | |**UDOO KEY Basic**|**UDOO KEY Pro**|
 | --- | --- | --- |
-|*Sensors*| on chip temperature sensor (RP2040) | on chip temperature sensor (RP2040) </p> 9-AXIS IMU motion sensors </p> omnidirectional digital microphone </p> |
+|*Sensors*| on chip temperature sensor (RP2040) | on chip temperature sensor (RP2040) </p> 6-axis IMU motion sensors </p> omnidirectional digital microphone </p> |
 
 ---
 
