@@ -21,7 +21,7 @@ Download the [User Manual](https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY
 
 <p>
 
-Visit the [Get Started - ESP32](/03_Get_Started/00_Get_started_with_ESP32.md) and [Get Started - RP2040](/03_Get_Started/00_Get_started_with_RP2040.md) sections to learn how to start using your UDOO KEY.
+Visit the [Get Started - ESP32](/03_Get_Started/00_Get_started_with_ESP32.md), [Get Started - RP2040 and MicroPython](/03_Get_Started/02_Get_started_with_RP2040_and_MicroPython.md) and [Get Started - RP2040 and Arduino](/03_Get_Started/03_Get_started_with_RP2040_and_Arduino.md) sections to learn how to start using your UDOO KEY.
 
 ## Lineup
 
