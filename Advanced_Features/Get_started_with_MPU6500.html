@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Get started with MPU6500 - UDOO Key Docs</title>
+    <meta name="description" content="UDOO Key Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="../img/logo_docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Key Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware References</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_References/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Hardware_References/Full_specs.html">Full specs</a></li><li class='Nav__item '><a href="../Hardware_References/ESP32.html">ESP32</a></li><li class='Nav__item '><a href="../Hardware_References/RP2040.html">RP2040</a></li><li class='Nav__item '><a href="../Hardware_References/MCUs_connections.html">MCUs connections</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Get Started</a><ul class='Nav'><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_IDF.html">Get started with ESP32 and IDF</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_deprecated.html">Get started with ESP32 - deprecated</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Get started with ESP32 and Arduino</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_MicroPython.html">Get started with RP2040 and MicroPython</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Get started with RP2040 and Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Compatible Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Compatible_Accessories/ESP_accessories.html">ESP accessories</a></li><li class='Nav__item '><a href="../Compatible_Accessories/RP_accessories.html">RP accessories</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Features</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../Advanced_Features/Get_started_with_MPU6500.html">Get started with MPU6500</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                            <a href="https://github.com/UDOOboard/Key-Docs" target="_blank">Github Docs</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Get started with MPU6500</h1>
+            </div>
+
+
+    <div class="s-content">
+        <h1 id="page_Get-started-with-MPU6500-IC">Get started with MPU6500 IC</h1>
+<p>Those of you who purchased the UDOO KEY PRO will be eager to try the on-board sensors as soon as possible!<br />
+In this guide we'll show you how to easily test the on-board accelerometer, MPU-6500, with the <a href="https://docs.espressif.com/projects/esp-idf/en/v5.0.2/esp32/get-started" class="Link--external">esp-idf v5.0.2</a> framework.</p>
+<p>Install it on your PC and let's start coding!</p>
+<h2 id="page_MPU-tester-project">MPU tester project</h2>
+<p>The code we are going to show in this little guide has been pushed on <a href="https://github.com/UDOOboard/UDOO-Key-Pro-MPU6500-Example" class="Link--external">this</a> repository: those of you who want to quickly test and integrate the accelerometer driver on their project can clone, check and use it.</p>
+<p>Instead, if you want an explanation about the wrote code, simply continue reading below.</p>
+<h2 id="page_Step-by-step-guide">Step-by-step guide</h2>
+<p>First of all you have to install the esp-idf version 5.0.2 on your development PC: if you already haven't, install it following the instructions on the <a href="https://docs.espressif.com/projects/esp-idf/en/v5.0.2/esp32/get-started/#installation" class="Link--external">offical Espressif page</a>.<br />
+The developed project has been tested on Ubuntu 20.04 OS but, thanks to the esp-idf support, it can be compiled on each supported OS.</p>
+<p>To communicate with the accelerometer and get sensed values we need the driver https://github.com/natanaeljr/esp32-MPU-driver.git developed by <a href="https://github.com/natanaeljr" class="Link--external">natanalejr</a>.<br />
+The project above depends on a wrapper around the esp-idf libraries to communicate over the ESP32 I²C bus: https://github.com/natanaeljr/esp32-I2Cbus.git.</p>
+<p>Both of them will be added later as managed components using the <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-component-manager.html" class="Link--external">IDF Component Manager tool</a>.</p>
+<h3 id="page_Project-creation-and-setup">Project creation and setup</h3>
+<p>In this first step we will create the project.</p>
+<p>Thanks to the <code>esp-idf</code> support it it a simple operation.<br />
+You have to move to the workspace folder and type:</p>
+<pre><code class="language-SHELL">idf.py create-project mpu6500-tester
+</code></pre>
+<p>Then create the <code>idf_component.yml</code> file inside the main component folder and paste the following text:</p>
+<pre><code class="language-YAML">## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: &quot;&gt;=5.0.2&quot;
+</code></pre>
+<h3 id="page_implementation"><code>accelerometer-driver</code> implementation</h3>
+<p>Firstly you have to create the new component by moving to the root project folder and creating the component <code>acclerometer-driver</code> typing:</p>
+<pre><code class="language-SHELL">cd mpu6500-tester
+idf.py create-component accelerometer-driver -C components
+</code></pre>
+<p>Since the <code>esp32-MPU-driver</code> and <code>esp32-I2Cbus</code> components are written in C++, you can include them in your C++ project or, if your project is composed by C sources, you need to create a wrapper around C++ classes in order to use them.<br />
+Here we show the second option since the first one is a fairly simple operation and don't necessarily need a wrapper component.</p>
+<p>So let's create the <code>MPU-driver-wrapper.cpp</code> file in the same directory of <code>accelerometer-driver.c</code> file: it will contain a set of functions that can be used to invoke C++ methods.<br />
+Then update the <code>CMakeLists.txt</code> file content to include the just created file in the compilation process. The new content can be as follow:</p>
+<pre><code class="language-CMAKE">idf_component_register(
+    SRCS &quot;accelerometer-driver.c&quot; &quot;MPU-driver-wrapper.cpp&quot;
+    INCLUDE_DIRS &quot;include&quot;)
+</code></pre>
+<p>To add required dependencies to <code>accelerometer-driver</code> component, create the <code>idf_component.yml</code> file in the root directory of the target component and paste the following text:</p>
+<pre><code class="language-YAML">## IDF Component Manager Manifest File
+dependencies:
+  ## Required IDF version
+  idf:
+    version: &quot;&gt;=5.0.2&quot;
+
+  MPU-driver:
+    version: &quot;master&quot;
+    git: https://github.com/natanaeljr/esp32-MPU-driver.git
+  I2Cbus:
+    version: &quot;master&quot;
+    git: https://github.com/natanaeljr/esp32-I2Cbus.git
+</code></pre>
+<p>Finally, to clone locally the dependencies, go to the root folder of project and type:</p>
+<pre><code class="language-SHELL">idf.py reconfigure
+</code></pre>
+<p>Now it's time to add the <code>acclerometer-driver</code> implementation!</p>
+<hr />
+<p>First of all, define the data structures and functions inside the <code>accelerometer-driver.h</code> file: you need a sensor descriptor structure, an initializer for the component and two functions to read the accelerometer and gyroscope data.<br />
+Since you cannot refer to a C++ classes inside a C source file, the <code>mpu6500_sensor_t</code> contains a <code>void *</code> reference which will point to the actual driver class.</p>
+<p>The header file content can be as follow:</p>
+<pre><code class="language-C">#pragma once
+
+#include &lt;esp_err.h&gt;
+
+typedef struct
+{
+    void *driver_object;
+} mpu6500_sensor_t;
+
+esp_err_t mpu6500_sensor_init(mpu6500_sensor_t **target_sensor);
+esp_err_t accelerometer_read(mpu6500_sensor_t *sensor, float *ax, float *ay, float *az);
+esp_err_t gyroscope_read(mpu6500_sensor_t *sensor, float *gx, float *gy, float *gz);
+
+</code></pre>
+<p>The implementation of such functions, contained in <code>accelerometer-driver.c</code> file, can be:</p>
+<pre><code class="language-C">#include &lt;esp_err.h&gt;
+#include &lt;esp_log.h&gt;
+
+#include &lt;string.h&gt;
+
+#include &lt;accelerometer-driver.h&gt;
+
+const char *TAG = &quot;accelerometer-driver&quot;;
+
+extern void *mpu_get_new_driver_object();
+extern esp_err_t mpu_accelerometer_read(void *, float *, float *, float *);
+extern esp_err_t mpu_gyroscope_read(void *, float *, float *, float *);
+
+esp_err_t mpu6500_sensor_init(mpu6500_sensor_t **target_sensor)
+{
+    if (*target_sensor != NULL) {
+        ESP_LOGE(TAG, &quot;Target sensor structure alreeady existing!&quot;);
+        return ESP_ERR_INVALID_ARG;
+    }
+
+    *target_sensor = (mpu6500_sensor_t *) malloc(sizeof(mpu6500_sensor_t));
+    memset(*target_sensor, '\0', sizeof(mpu6500_sensor_t));
+
+    (*target_sensor)-&gt;driver_object = mpu_get_new_driver_object();
+
+    return ESP_OK;
+}
+
+esp_err_t accelerometer_read(mpu6500_sensor_t *sensor, float *ax, float *ay, float *az)
+{
+    return mpu_accelerometer_read(sensor-&gt;driver_object, ax, ay, az);
+}
+
+esp_err_t gyroscope_read(mpu6500_sensor_t *sensor, float *gx, float *gy, float *gz)
+{
+    return mpu_gyroscope_read(sensor-&gt;driver_object, gx, gy, gz);
+}
+</code></pre>
+<p>Such functions simply calls extern functions, that will be defined and implemented in <code>MPU-driver-wrapper.cpp</code> file, which contain the relevant business logic.</p>
+<p>So the content of such file can be:</p>
+<pre><code class="language-C++">#include &lt;esp_log.h&gt;
+#include &lt;esp_err.h&gt;
+
+#include &lt;MPU.hpp&gt;
+#include &lt;I2Cbus.hpp&gt;
+#include &lt;mpu/math.hpp&gt;
+
+static const char *TAG = &quot;MPU-driver-wrapper&quot;;
+
+extern &quot;C&quot; MPU_t *mpu_get_new_driver_object() {
+    MPU_t *sensor = NULL;
+    esp_err_t res = ESP_OK;
+    
+    i2c0.begin(GPIO_NUM_18, GPIO_NUM_21, 400000);
+
+    sensor   = new MPU_t();
+    sensor-&gt;setBus(i2c0);
+    sensor-&gt;setAddr(mpud::MPU_I2CADDRESS_AD0_HIGH);
+
+    if ((res = sensor-&gt;testConnection()) != ESP_OK) {
+        ESP_LOGE(TAG, &quot;Failed to connect to the MPU, error=%#X (%s)&quot;, res, esp_err_to_name(res));
+        vTaskDelay(pdMS_TO_TICKS(100));
+    }
+
+    ESP_ERROR_CHECK(sensor-&gt;initialize());
+
+    return sensor;
+}
+
+
+
+
+extern &quot;C&quot; esp_err_t mpu_accelerometer_read(MPU_t *MPU_driver, float *x, float *y, float *z) {
+    mpud::raw_axes_t accelRaw;
+    mpud::float_axes_t accelG;
+    
+    // Reading
+    MPU_driver-&gt;acceleration(&amp;accelRaw);
+    // Converting
+    accelG = mpud::accelGravity(accelRaw, mpud::ACCEL_FS_4G);
+
+    *x = accelG.x;
+    *y = accelG.y;
+    *z = accelG.z;
+
+    return ESP_OK;
+}
+
+
+
+
+extern &quot;C&quot; esp_err_t mpu_gyroscope_read(MPU_t *MPU_driver, float *x, float *y, float *z) {
+    mpud::raw_axes_t gyroRaw;
+    mpud::float_axes_t gyroDPS;
+    
+    // Reading
+    MPU_driver-&gt;rotation(&amp;gyroRaw);
+    // Converting
+    gyroDPS = mpud::gyroDegPerSec(gyroRaw, mpud::GYRO_FS_500DPS);
+
+    *x = gyroDPS[0];
+    *y = gyroDPS[1];
+    *z = gyroDPS[2];
+
+    return ESP_OK;
+}
+</code></pre>
+<p>Now that we have the MPU driver implementation, let's dive into the main component implementation!</p>
+<h3 id="page_Main-component-implementation">Main component implementation</h3>
+<p>The main component is in charge of initializing the sensor and periodically print sensor values on the screen.<br />
+The content of <code>mpu65000-tester.c</code> is:</p>
+<pre><code class="language-C">#include &lt;accelerometer-driver.h&gt;
+#include &lt;esp_log.h&gt;
+#include &lt;esp_err.h&gt;
+#include &lt;freertos/FreeRTOS.h&gt;
+#include &lt;freertos/task.h&gt;
+
+static const char* TAG = &quot;mpu6500-tester&quot;;
+
+
+void app_main() {
+    mpu6500_sensor_t *sensor = NULL;
+
+    ESP_ERROR_CHECK(mpu6500_sensor_init(&amp;sensor));
+
+    while (1) {
+        float a_x, a_y, a_z, g_x, g_y, g_z;
+        ESP_ERROR_CHECK(accelerometer_read(sensor, &amp;a_x, &amp;a_y, &amp;a_z));
+        ESP_LOGI(TAG, &quot;A (x, y, z) : (%+6.2f, %+6.2f, %+6.2f)&quot;, a_x, a_y, a_z);
+        ESP_ERROR_CHECK(gyroscope_read(sensor, &amp;g_x, &amp;g_y, &amp;g_z));
+        ESP_LOGI(TAG, &quot;G (x, y, z) : (%+6.2f, %+6.2f, %+6.2f)&quot;, g_x, g_y, g_z);
+
+        vTaskDelay(pdMS_TO_TICKS(4000));
+    }
+}
+</code></pre>
+<h3 id="page_Build-and-flash">Build and flash</h3>
+<p>You have to select the correct MPU model before build and flash the project. To configure the project, open the <code>menuconfig</code> tool typing in the root folder project:</p>
+<pre><code class="language-BASH">idf.py menuconfig
+</code></pre>
+<p>Go to <code>Component config/MPU driver/MPU chip model</code> and select the <code>MPU6500</code> entry.</p>
+<p>Then close saving the changed configuration and compile the project with:</p>
+<pre><code class="language-BASH">idf.py build
+</code></pre>
+<p>To flash and monitor the execution type on the terminal:</p>
+<pre><code class="language-BASH">idf.py -p &lt;serial_port&gt; flash monitor
+</code></pre>
+<p>Replacing <code>&lt;serial_port&gt;</code> with the actual port (generally <code>/dev/ttyUSB0</code> or similar on linux).</p>
+<p>When the flash operation finished, press the reset button.<br />
+If everything went well, you will see on the terminal something like</p>
+<pre><code class="language-BASH">I (0) cpu_start: App cpu up.
+I (217) cpu_start: Pro cpu start user code
+I (217) cpu_start: cpu freq: 160000000 Hz
+I (217) cpu_start: Application information:
+I (222) cpu_start: Project name:     mpu6500-tester
+I (227) cpu_start: App version:      1
+I (232) cpu_start: Compile time:     Oct  4 2023 09:15:44
+I (238) cpu_start: ELF file SHA256:  291a143921ded781...
+I (244) cpu_start: ESP-IDF:          v5.0.2
+I (248) cpu_start: Min chip rev:     v0.0
+I (253) cpu_start: Max chip rev:     v3.99 
+I (258) cpu_start: Chip rev:         v3.0
+I (263) heap_init: Initializing. RAM available for dynamic allocation:
+I (270) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (276) heap_init: At 3FFB2848 len 0002D7B8 (181 KiB): DRAM
+I (282) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (289) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (295) heap_init: At 4008D0F8 len 00012F08 (75 KiB): IRAM
+I (303) spi_flash: detected chip: generic
+I (306) spi_flash: flash io: dio
+I (311) cpu_start: Starting scheduler on PRO CPU.
+I (0) cpu_start: Starting scheduler on APP CPU.
+I (515) MPU6500: Reset!
+I (515) MPU6500: Sample rate set to 100 Hz
+I (515) MPU6500: Initialization complete
+I (515) mpu6500-tester: A (x, y, z) : ( -0.00,  +0.03,  +0.99)
+I (525) mpu6500-tester: G (x, y, z) : ( +0.20,  -0.24,  -0.21)
+I (4525) mpu6500-tester: A (x, y, z) : ( -0.01,  +0.03,  +0.99)
+I (4525) mpu6500-tester: G (x, y, z) : ( +0.56,  -0.61,  -0.40)
+I (8525) mpu6500-tester: A (x, y, z) : ( -0.01,  +0.03,  +0.99)
+I (8525) mpu6500-tester: G (x, y, z) : ( +0.52,  -0.56,  -0.46)
+I (12525) mpu6500-tester: A (x, y, z) : ( -0.01,  +0.03,  +0.99)
+</code></pre>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Compatible_Accessories/RP_accessories.html">Previous</a></li>                    </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, March 15, 2024 at 7:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

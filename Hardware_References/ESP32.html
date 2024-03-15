@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>ESP32 - UDOO Key Docs</title>
+    <meta name="description" content="UDOO Key Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="../img/logo_docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Key Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware References</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_References/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Hardware_References/Full_specs.html">Full specs</a></li><li class='Nav__item Nav__item--active'><a href="../Hardware_References/ESP32.html">ESP32</a></li><li class='Nav__item '><a href="../Hardware_References/RP2040.html">RP2040</a></li><li class='Nav__item '><a href="../Hardware_References/MCUs_connections.html">MCUs connections</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Get Started</a><ul class='Nav'><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_IDF.html">Get started with ESP32 and IDF</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_deprecated.html">Get started with ESP32 - deprecated</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Get started with ESP32 and Arduino</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_MicroPython.html">Get started with RP2040 and MicroPython</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Get started with RP2040 and Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Compatible Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Compatible_Accessories/ESP_accessories.html">ESP accessories</a></li><li class='Nav__item '><a href="../Compatible_Accessories/RP_accessories.html">RP accessories</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Features</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Features/Get_started_with_MPU6500.html">Get started with MPU6500</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                            <a href="https://github.com/UDOOboard/Key-Docs" target="_blank">Github Docs</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>ESP32</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p><img src="../img/p3_header.jpg" alt="UDOO KEY P3 header" style="width:1000px;"></img></p>
+<hr />
+<p>The UDOO KEY is powered by Espressif <strong>ESP32-WROVER-E</strong> MCU module, a powerful and versatile platform for Edge AI applications, ranging from low-power sensor networks to the most demanding tasks, such as voice encoding, music streaming and MP3 decoding. This module is provided with a PCB antenna.<br />
+This fully programmable microcontroller is based on a <strong>dual-core Xtensa 32-bit LX6</strong>, with a 16 MB internal SPI flash memory, an additional 8 MB SPI Pseudo Static RAM (PSRAM), Wi-Fi and Bluetooth.</p>
+<p>The core of the module is the <strong>ESP32-D0WD-V3</strong> chip, which is designed to be scalable and adaptive. It features two CPU cores that can be individually controlled, and the CPU clock frequency is adjustable from 80 MHz to 240 MHz. The chip is also provided with a low-power co-processor that can be used instead of the CPU to save power while performing tasks that do not require much computing power, such as perihperals monitoring.</p>
+<p>Thanks to the ESP32 on board, you get full Wi-Fi 802.11b/g/n connectivity, Bluetooth and BLE v4.2. This ensures the UDOO KEY extreme versatility: the Wi-Fi allows to set up direct connection to the internet through a Wi-Fi router, while using the Bluetooth users can connect to their phones or broadcast low energy beacons for its detection.</p>
+<p>Note that the ESP32 on board is not just a Wi-Fi, BT &amp; BLE module. It gives you full access to the firmware of ESP32 and you can program it as you please.
+The sleep current of the ESP32 chip is less than 5 µA, making it suitable for battery powered and wearable electronics applications. The module supports a data rate of up to 150 Mbps, 802.11b at 13.5dBm, and 802.11g/n at 18.5 dBm of output power to the antenna to ensure the widest physical range. The module thus offers industry-leading specifications and the best performance for electronic integration, range, power consumption, and connectivity. Secure (encrypted) over the air (OTA) upgrade is also supported, so that users can upgrade their products even after their release, at minimum cost and effort.
+For further information on Espressif ESP32, please refer to the dedicated page on <a href="https://espressif.com" class="Link--external">espressif.com</a>.</p>
+<p>In order to be able to interface the ESP32 with external integrated circuits, the target MCU is equipped with an UEXT connector following the pin map as reported in the table below.</p>
+<table>
+<thead>
+<tr>
+<th>Pin number</th>
+<th>Schematic pin name</th>
+<th>ESP GPIO</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>3V3</td>
+<td>-</td>
+<td>3.3V output, 150mA max</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GND</td>
+<td>-</td>
+<td>Power ground</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EXT_UART2_TX</td>
+<td>GPIO13</td>
+<td>UART transmission line</td>
+</tr>
+<tr>
+<td>4</td>
+<td>EXT_UART2_RX</td>
+<td>GPIO26</td>
+<td>UART reception line</td>
+</tr>
+<tr>
+<td>5</td>
+<td>ESP32_SCL</td>
+<td>GPIO21</td>
+<td>I²C clock line</td>
+</tr>
+<tr>
+<td>6</td>
+<td>ESP32_SDA</td>
+<td>GPIO18</td>
+<td>I²C data line</td>
+</tr>
+<tr>
+<td>7</td>
+<td>SPI_MISO</td>
+<td>GPIO35</td>
+<td>SPI Microcontroller in / Sensor out</td>
+</tr>
+<tr>
+<td>8</td>
+<td>SPI_MOSI</td>
+<td>GPIO12</td>
+<td>SPI Microcontroller out / Sensor in</td>
+</tr>
+<tr>
+<td>9</td>
+<td>SPI_SCK</td>
+<td>GPIO14</td>
+<td>SPI clock</td>
+</tr>
+<tr>
+<td>10</td>
+<td>SPI_CS</td>
+<td>GPIO15</td>
+<td>SPI chip select</td>
+</tr>
+</tbody>
+</table>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Hardware_References/Full_specs.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_References/RP2040.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, March 15, 2024 at 7:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Get started with RP2040 and MicroPython - UDOO Key Docs</title>
+    <meta name="description" content="UDOO Key Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="../img/logo_docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Key Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware References</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_References/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Hardware_References/Full_specs.html">Full specs</a></li><li class='Nav__item '><a href="../Hardware_References/ESP32.html">ESP32</a></li><li class='Nav__item '><a href="../Hardware_References/RP2040.html">RP2040</a></li><li class='Nav__item '><a href="../Hardware_References/MCUs_connections.html">MCUs connections</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Get Started</a><ul class='Nav'><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_IDF.html">Get started with ESP32 and IDF</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_deprecated.html">Get started with ESP32 - deprecated</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Get started with ESP32 and Arduino</a></li><li class='Nav__item Nav__item--active'><a href="../Get_Started/Get_started_with_RP2040_and_MicroPython.html">Get started with RP2040 and MicroPython</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Get started with RP2040 and Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Compatible Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Compatible_Accessories/ESP_accessories.html">ESP accessories</a></li><li class='Nav__item '><a href="../Compatible_Accessories/RP_accessories.html">RP accessories</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Features</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Features/Get_started_with_MPU6500.html">Get started with MPU6500</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                            <a href="https://github.com/UDOOboard/Key-Docs" target="_blank">Github Docs</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Get started with RP2040 and MicroPython</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p>We will install all the <strong>dependencies</strong>, in both Linux-based and Windows OSs, to play with the <strong>MicroPython</strong> framework.
+We have chosen this development environment because it's easy to learn and has a great support from the community.</p>
+<p>As for the other on-board microcontroller, there exist several frameworks that support the RP2040.
+To write firmwares for the RP2040, you can use the official <a href="https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html" class="Link--external">C/C++ SDK</a>, the <a href="https://crates.io/crates/rp-pico" class="Link--external">Rust crate</a> for the Pico board or the <a href="https://github.com/earlephilhower/arduino-pico" class="Link--external">Arduino SDK</a>. Choose the one you feel more comfortable with.</p>
+<hr />
+<p>We have recorded a video in which all steps described below are directly executed on a PC.</p>
+<iframe
+    style="border:none;overflow:hidden;display:block;margin:0 auto;"
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/LbhPpFTLdg0"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
+<p>Here a distinction between the Linux-based and Windows OSs is not needed, since MicroPython is host platform agnostic.</p>
+<p>First of all you need to install <code>python3</code> and <code>python3-pip</code>, but they are already installed by following the <a href="Get_started_with_ESP32_and_IDF.html">guide for ESP32 and IDF part</a>.<br />
+You also need to install the <code>rshell</code> python package. It s needed to upload the python code and interact with the MicroPython interpreter running on the MCU.
+In a command line, type:</p>
+<pre><code class="language-bash">python3 -m pip install rshell
+</code></pre>
+<p>Now upload the MicroPython firmware into RP flash.<br />
+Firstly, download its latest release from <a href="https://micropython.org/download/rp2-pico/" class="Link--external">this page</a>.<br />
+Then put the microcontroller in flash mode: close the jumper <strong>JP1</strong> to allow the computer to interact with RP and connect the board to your PC using an USB Type-C cable. Keep pressed the button <strong>SW2</strong> labeled as <code>BOOTSEL</code> and push the reset button <strong>SW1</strong>. After these operations, the board is detected as a removable device by your computer.<br />
+Simply copy the just downloaded <code>.uf2</code> file and paste it into the removable drive. In this way you can program the Raspberry MCU!</p>
+<p>Once the MicroPython framework has been loaded, create a file called main.py and copy the following code on it.<br />
+It will make the LED attached on pin 25 blink each 750 milliseconds!</p>
+<pre><code class="language-python">from machine import Pin
+import time
+
+LED_PIN=25
+led = Pin(LED_PIN, Pin.OUT)
+
+
+
+while True :
+    led.toggle ()
+    time.sleep (.750)
+</code></pre>
+<p>To load the script on your board, move to the folder containing the <code>main.py</code> file using a command line (let's call it <code>rp</code> placed in <code>ws</code> folder), and type the following commands:</p>
+<pre><code class="language-bash">cd ws/rp
+# Invoke the rshell program
+rshell
+# It will automatically find the board, if correctly plugged
+
+# Now you can copy the main.py source file by copying it into /pyboard folder which represent the connected board
+cp main.py /pyboard/main.py
+</code></pre>
+<p>To apply changes, close the <code>rshell</code> program and reset the board with on-board button <strong>SW1</strong>.</p>
+<p>At this moment the LED will start blinking!</p>
+<hr />
+<p>To implement complex project using MicroPython you can find <a href="https://docs.micropython.org/en/latest/" class="Link--external"><strong>its official documentation here</strong></a> and the documentation for <a href="https://docs.micropython.org/en/latest/library/rp2.html" class="Link--external"><strong>RP2040 specific functionalities here</strong></a>.</p>
+<p>Enjoy with your UDOO KEY!</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Previous</a></li>            <li class=Pager--next><a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, March 15, 2024 at 7:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

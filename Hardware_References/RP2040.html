@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>RP2040 - UDOO Key Docs</title>
+    <meta name="description" content="UDOO Key Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="../img/logo_docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Key Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware References</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_References/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Hardware_References/Full_specs.html">Full specs</a></li><li class='Nav__item '><a href="../Hardware_References/ESP32.html">ESP32</a></li><li class='Nav__item Nav__item--active'><a href="../Hardware_References/RP2040.html">RP2040</a></li><li class='Nav__item '><a href="../Hardware_References/MCUs_connections.html">MCUs connections</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Get Started</a><ul class='Nav'><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_IDF.html">Get started with ESP32 and IDF</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_deprecated.html">Get started with ESP32 - deprecated</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Get started with ESP32 and Arduino</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_MicroPython.html">Get started with RP2040 and MicroPython</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Get started with RP2040 and Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Compatible Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Compatible_Accessories/ESP_accessories.html">ESP accessories</a></li><li class='Nav__item '><a href="../Compatible_Accessories/RP_accessories.html">RP accessories</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Features</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Features/Get_started_with_MPU6500.html">Get started with MPU6500</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                            <a href="https://github.com/UDOOboard/Key-Docs" target="_blank">Github Docs</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>RP2040</h1>
+            </div>
+
+
+    <div class="s-content">
+        <p><img src="../img/p1_p2_p5_headers.png" alt="UDOO KEY P1, P2 and P5 header" style="width:1000px;"></img></p>
+<hr />
+<p>The Pico-compatible part of the UDOO KEY is built upon a <strong>Raspberry Pi RP2040 microcontroller</strong>, dual Arm Cortex-M0+, with a QSPI 8MB Flash, a 133MHz clock and 264KB of on-chip SRAM.
+The RP2040 microcontroller is a chip from Raspberry Pi Foundation that integrates two Arm Cortex-M0+ CPUs that can be run up to 133MHz, featuring 264kB of on-chip SRAM and up to 16MB of off-chip Flash memory. This microcontroller can be used for machine learning, motor control, audio and so on.
+The UDOO KEY is <strong>100% compatible with Raspberry Pi Pico</strong> both hardware and software-wise. This means that each and any expansion hardware as well as each and any software built for Raspberry Pi Pico will work out of the box on UDOO KEY.
+For further information on RP2040, please refer to the dedicated page on <a href="htps://raspberrypi.com" class="Link--external">raspberrypi.com</a>.</p>
+<p><strong>P1</strong> and <strong>P2</strong> connectors of the Pico part can be used to connect external peripherals to the RP2040. Two 20-pin headers or castellated holes must be soldered on P1 and P2 in a proper manner to use them . The following tables summarize the possibilities offered by P1 and P2 connectors.</p>
+<h4 id="page_P1">P1</h4>
+<table>
+<thead>
+<tr>
+<th>Pin number</th>
+<th>Schematic pin name</th>
+<th>SPI</th>
+<th>UART interface</th>
+<th>I²C</th>
+<th>PWM</th>
+<th>SIO/PIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>N.C.</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>N.C.</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>RPI_SDA</td>
+<td>SPI0_SCK</td>
+<td>UART0_CTS</td>
+<td>I2C1_SDA</td>
+<td>PWM1_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>RPI_SCL</td>
+<td>SPI0_TX</td>
+<td>UART0_RTS</td>
+<td>I2C1_SCL</td>
+<td>PWM1_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>GP4</td>
+<td>SPI0_RX</td>
+<td>UART1_TX</td>
+<td>I2C0_SDA</td>
+<td>PWM2_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GP5</td>
+<td>SPI0_CSn</td>
+<td>UART1_RX</td>
+<td>I2C0_SCL</td>
+<td>PWM2_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GP6</td>
+<td>SPI0_SCK</td>
+<td>UART1_CTS</td>
+<td>I2C1_SDA</td>
+<td>PWM3_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>GP7</td>
+<td>SPI0_TX</td>
+<td>UART1_RTS</td>
+<td>I2C1_SCL</td>
+<td>PWM3_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>11</td>
+<td>GP8</td>
+<td>SPI1_RX</td>
+<td>UART1_TX</td>
+<td>I2C0_SDA</td>
+<td>PWM4_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>12</td>
+<td>GP9</td>
+<td>SPI1_CSn</td>
+<td>UART1_RX</td>
+<td>I2C0_SCL</td>
+<td>PWM4_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>13</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>14</td>
+<td>GP10</td>
+<td>SPI1_SCK</td>
+<td>UART1_CTS</td>
+<td>I2C1_SDA</td>
+<td>PWM5_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>15</td>
+<td>GP11</td>
+<td>SPI1_TX</td>
+<td>UART1_RTS</td>
+<td>I2C1_SCL</td>
+<td>PWM5_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>16</td>
+<td>GP12</td>
+<td>SPI1_RX</td>
+<td>UART0_TX</td>
+<td>I2C0_SDA</td>
+<td>PWM6_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>17</td>
+<td>GP13</td>
+<td>SPI1_CSn</td>
+<td>UART0_RX</td>
+<td>I2C0_SCL</td>
+<td>PWM6_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>18</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>19</td>
+<td>GP14</td>
+<td>SPI1_SCK</td>
+<td>UART0_CTS</td>
+<td>I2C1_SDA</td>
+<td>PWM7_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>20</td>
+<td>GP15</td>
+<td>SPI1_TX</td>
+<td>UART0_RTS</td>
+<td>I2C1_SCL</td>
+<td>PWM7_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p><strong>Pin number</strong> <strong>1</strong> and <strong>2</strong> are not connected since are used for MCUs communication.</p>
+<h4 id="page_P2">P2</h4>
+<table>
+<thead>
+<tr>
+<th>Pin number</th>
+<th>Schematic pin name</th>
+<th>SPI</th>
+<th>UART interface</th>
+<th>I²C</th>
+<th>PWM</th>
+<th>SIO/PIO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GP16</td>
+<td>SPI0_RX</td>
+<td>UART0_TX</td>
+<td>I2C0_SDA</td>
+<td>PWM0_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GP17</td>
+<td>SPI0_CSn</td>
+<td>UART0_RX</td>
+<td>I2C0_SCL</td>
+<td>PWM0_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>GP18</td>
+<td>SPI0_SCK</td>
+<td>UART0_CTS</td>
+<td>I2C1_SDA</td>
+<td>PWM1_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GP19</td>
+<td>SPI0_TX</td>
+<td>UART0_RTS</td>
+<td>I2C1_SCL</td>
+<td>PWM1_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>GP20</td>
+<td>SPI0_RX</td>
+<td>UART1_TX</td>
+<td>I2C0_SDA</td>
+<td>PWM2_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>7</td>
+<td>GP21</td>
+<td>SPI0_CSn</td>
+<td>UART1_RX</td>
+<td>I2C0_SCL</td>
+<td>PWM2_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GP22</td>
+<td>SPI0_SCK</td>
+<td>UART1_CTS</td>
+<td>I2C1_SDA</td>
+<td>PWM3_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>10</td>
+<td>RPI_RESET</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11</td>
+<td>GP26</td>
+<td>SPI1_SCK</td>
+<td>UART1_CTS</td>
+<td>I2C1_SDA</td>
+<td>PWM5_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>12</td>
+<td>GP27</td>
+<td>SPI1_TX</td>
+<td>UART1_RTS</td>
+<td>I2C1_SCL</td>
+<td>PWM5_B</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>13</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>14</td>
+<td>GP28</td>
+<td>SPI1_RX</td>
+<td>UART0_TX</td>
+<td>I2C0_SDA</td>
+<td>PWM6_A</td>
+<td>SIO/PIO0/PIO1</td>
+</tr>
+<tr>
+<td>15</td>
+<td>ADC_VREF</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>16</td>
+<td>3V3</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>17</td>
+<td>N.C.</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>18</td>
+<td>GND</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>19</td>
+<td>VSYS</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20</td>
+<td>VBUS</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p><strong>Pin number:</strong></p>
+<ul>
+<li>
+<strong>10</strong> is reserved for RP2040 reset by ESP32</li>
+<li>
+<strong>16</strong> provide 3.3V DC (315mA) in output</li>
+<li>
+<strong>17</strong> is not connected</li>
+<li>
+<strong>19</strong> provide 5V DC (500mA) filtered from USB Type-C connector (CN1)</li>
+<li>
+<strong>20</strong> provide 5V DC (500mA) raw from USB Type-C connector (CN1)</li>
+</ul>
+<h4 id="page_P5">P5</h4>
+<p>The <strong>Serial Wire Debug</strong> interface is available on the 1x3 poles connector <strong>P5</strong>. This header allows you to program and debug the RP2040 microcontroller externally.<br />
+The following table shows the pin configuration.</p>
+<table>
+<thead>
+<tr>
+<th>Pin number</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>SWCLK</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SWDIO</td>
+</tr>
+</tbody>
+</table>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Hardware_References/ESP32.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_References/MCUs_connections.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, March 15, 2024 at 7:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

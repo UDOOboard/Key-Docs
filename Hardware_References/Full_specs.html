@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Full specs - UDOO Key Docs</title>
+    <meta name="description" content="UDOO Key Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="../img/logo_docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Key Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware References</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_References/Overview.html">Overview</a></li><li class='Nav__item Nav__item--active'><a href="../Hardware_References/Full_specs.html">Full specs</a></li><li class='Nav__item '><a href="../Hardware_References/ESP32.html">ESP32</a></li><li class='Nav__item '><a href="../Hardware_References/RP2040.html">RP2040</a></li><li class='Nav__item '><a href="../Hardware_References/MCUs_connections.html">MCUs connections</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Get Started</a><ul class='Nav'><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_IDF.html">Get started with ESP32 and IDF</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_deprecated.html">Get started with ESP32 - deprecated</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Get started with ESP32 and Arduino</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_MicroPython.html">Get started with RP2040 and MicroPython</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Get started with RP2040 and Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Compatible Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Compatible_Accessories/ESP_accessories.html">ESP accessories</a></li><li class='Nav__item '><a href="../Compatible_Accessories/RP_accessories.html">RP accessories</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Features</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Features/Get_started_with_MPU6500.html">Get started with MPU6500</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                            <a href="https://github.com/UDOOboard/Key-Docs" target="_blank">Github Docs</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Full specs</h1>
+            </div>
+
+
+    <div class="s-content">
+        <h1 id="page_Full-Specifications">Full Specifications</h1>
+<p>Below the full technical specifications</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>ESP32</strong></th>
+<th><strong>RP2040</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Memory</em></td>
+<td>8 MB PSRAM</td>
+<td>264 KB PSRAM</td>
+</tr>
+<tr>
+<td><em>Flash storage</em></td>
+<td>16 MB internal SPI flash</td>
+<td>64M-bit external QSPI flash</td>
+</tr>
+<tr>
+<td><em>Connectivity</em></td>
+<td>Wi-Fi 802.11 b/g/n (802.11n up to 150 Mbps),  Bluetooth v4.2 BR/EDR and BLE specification</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>RF power</em></td>
+<td>WiFi: 20 dBm, BT:13.7 dBM</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>Modulation type</em></td>
+<td>GFSK, OFDM</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>Frequency bands</em></td>
+<td>2400 ÷ 2483.5 MHz</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>Bandwidth</em></td>
+<td>BT / BLE: 1 MHz (79 channels) / 2 MHz (40 channels)</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>Peripherals</em></td>
+<td>UART, I²C, SPI on UEXT connector, blue and yellow LEDS, SWD lines to RP2040</td>
+<td>UART, SPI, I²C on P1 and P2 , green LED</td>
+</tr>
+<tr>
+<td><em>Sensors</em></td>
+<td>SPK0838HT4H-1 Microphone, shared MPU-6500 IMU</td>
+<td>Shared MPU-6500 IMU</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p><em>Operating temperature</em>: 0°C ÷ +60°C<br />
+<em>Power supply</em>: +5VDC<br />
+<em>Dimensions</em>: 130 x 40 x 10.9 mm</p>
+<h2 id="page_Resources">Resources</h2>
+<p>In addition to this guide, several ones are available online:</p>
+<ul>
+<li>for a full explanation of the UDOO KEY hardware download the <a href="https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_MANUAL.pdf" class="Link--external">UDOO KEY User Manual</a>
+</li>
+<li>see the <a href="../Get_Started/Get_started_with_ESP32_and_IDF.html">Get Started - ESP32 and IDF</a>, <a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Get Started - ESP32 and Arduino</a>, <a href="../Get_Started/Get_started_with_RP2040_and_MicroPython.html">Get Started - RP2040 and MicroPython</a> and <a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Get Started - RP2040 and Arduino</a> sections for all the useful information for a quick installation</li>
+<li>
+<a href="https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_SCHEMATICS.pdf" class="Link--external">here</a> you can find the schematics file for the UDOO KEY</li>
+<li>
+<a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/index.html" class="Link--external">official ESP32 development framework</a>
+</li>
+<li>
+<a href="https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf" class="Link--external">Raspberry PI PICO datasheet</a>
+</li>
+<li>
+<a href="https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf" class="Link--external">Raspberry PI PICO C/C++ SDK</a>
+</li>
+<li>
+<a href="https://micropython.org/download/rp2-pico/" class="Link--external">MicroPython download page for RP2040</a>
+</li>
+</ul>
+<h2 id="page_Board-versions">Board versions</h2>
+<p>The UDOO KEY is available in two versions: <strong>UDOO KEY Basic</strong> and <strong>UDOO KEY Pro</strong>.</p>
+<p>The <strong>UDOO KEY Basic</strong> mounts no sensors, it is therefore perfect for those who want full control of their project, as it allows expansion with modules of developer’s choice.<br />
+The <strong>UDOO KEY Pro</strong> mounts two powerful sensors: a 6-axis IMU and a digital microphone.</p>
+<ul>
+<li>The 6-axis IMU motion sensor, an <a href="https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6500/" class="Link--external"><code>MPU-6500</code></a>, combines an accelerometer and a gyroscope in a single module to streamline a wide array of projects, from robotics and RC cars up to smart bikes and automation. It is connected to the ESP32 via I2C bus. You can decide whether to access the I2C bus via ESP32 or RP2040 through the jumper switch.</li>
+<li>The omnidirectional digital microphone, a <a href="https://www.knowles.com/docs/default-source/default-document-library/spk0838ht4h-1-datasheet-rev-c.pdf?Status=Master&amp;sfvrsn=753576b1_0" class="Link--external"><code>SPK0838HT4H</code></a>, is designed for AI-powered sound &amp; voice recognition as well as audio control. It is connected to the ESP32 via I2S bus.</li>
+</ul>
+<p>The following table and picture summarize the differences between the UDOO KEY Basic and the UDOO KEY Pro.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>UDOO KEY Basic</strong></th>
+<th><strong>UDOO KEY Pro</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Sensors</em></td>
+<td>on chip temperature sensor (RP2040)</td>
+<td>on chip temperature sensor (RP2040) </p> 6-axis IMU motion sensors </p> omnidirectional digital microphone </p></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Notice that, only for kickstarters, the IMU sensor has been changed and is currently installed the model <a href="https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6500/" class="Link--external"><code>MPU-6500</code></a>, a 6-axis motion tracking sensor.</strong></p>
+<h2 id="page_Board-headers">Board headers</h2>
+<p>The UDOO KEY features four useful pinout header.</p>
+<p>The pin header connector <strong>P3</strong> on the top of the board is compliant with the <strong>UEXT</strong> specification and is accessible from the ESP32. It exposes the I2C, UART, and SPI interfaces.</p>
+<p><img src="../img/p3_header.jpg" alt="UDOO KEY P3 header" style="width:1000px;"></img></p>
+</p>
+<p>The two headers on the bottom of the board, <strong>P1</strong> and <strong>P2</strong>, are 100% compatible with Raspberry Pi Pico, both hardware and software-wise – except for two GPIO pins used for UART mapping, namely <em>GP0</em> and <em>GP1</em>, to ensure the communication between the ESP32 and the RP2040. This means that each and any expansion hardware as well as software built for Raspberry Pi Pico will work out of the box on the UDOO KEY.<br />
+Finally, on <strong>P5</strong> header are connected SWD lines (<em>SWDCLK</em>, <em>GND</em> and <em>SWDIO</em>) to easly program the RP2040, as for the Raspberry Pi Pico.</p>
+<p><img src="../img/p1_p2_p5_headers.png" alt="UDOO KEY P1, P2 and P5 header" style="width:1000px;"></img></p>
+<h2 id="page_Power-source">Power source</h2>
+<p>The UDOO KEY can be powered by an external power supply of <strong>+5V DC</strong> (max 2.5A) via <strong>USB Type-C connector</strong> (<em>C1</em>).<br />
+The board is also provided with a 2.5A 32V DC fuse to protect itself from overcurrent injection.<br />
+The USB Type-C connector powers up both the ESP32-WROVER-E module and the RP2040, and all peripherals connected on.</p>
+<p>The UDOO KEY can go into <strong>deep sleep</strong>, reducing the power consumption to a minimum. In this state it only awakes if triggered by a specific event, thus extending battery life up to several years.</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Hardware_References/Overview.html">Previous</a></li>            <li class=Pager--next><a href="../Hardware_References/ESP32.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, March 15, 2024 at 7:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

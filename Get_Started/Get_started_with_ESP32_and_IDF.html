@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Get started with ESP32 and IDF - UDOO Key Docs</title>
+    <meta name="description" content="UDOO Key Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon-udoo.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme-navy.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<header class="Navbar hidden-print">
+    <img class="pull-left udoologo" src="../img/logo_docs.png"> 
+<a class="Navbar__brand" href="../index.html">
+UDOO Key Documentation</a>
+
+    <div class="Search">
+        <svg class="Search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451 451"><path d="M447.05 428l-109.6-109.6c29.4-33.8 47.2-77.9 47.2-126.1C384.65 86.2 298.35 0 192.35 0 86.25 0 .05 86.3.05 192.3s86.3 192.3 192.3 192.3c48.2 0 92.3-17.8 126.1-47.2L428.05 447c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.2-5.2 5.2-13.8 0-19zM26.95 192.3c0-91.2 74.2-165.3 165.3-165.3 91.2 0 165.3 74.2 165.3 165.3s-74.1 165.4-165.3 165.4c-91.1 0-165.3-74.2-165.3-165.4z"/></svg>
+        <input type="search" id="tipue_search_input" class="Search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+</header>
+<div class="Columns content">
+    <aside class="Columns__left Collapsible">
+        <div class="Collapsible__container">
+            <button type="button" class="Button Collapsible__trigger">
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+                <span class="Collapsible__trigger--bar"></span>
+            </button>
+        </div>
+
+        <div class="Collapsible__content">
+            <!-- Navigation -->
+            <ul class='Nav'><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Introduction</a><ul class='Nav'><li class='Nav__item '><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Hardware References</a><ul class='Nav'><li class='Nav__item '><a href="../Hardware_References/Overview.html">Overview</a></li><li class='Nav__item '><a href="../Hardware_References/Full_specs.html">Full specs</a></li><li class='Nav__item '><a href="../Hardware_References/ESP32.html">ESP32</a></li><li class='Nav__item '><a href="../Hardware_References/RP2040.html">RP2040</a></li><li class='Nav__item '><a href="../Hardware_References/MCUs_connections.html">MCUs connections</a></li></ul></li><li class='Nav__item Nav__item--open has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Get Started</a><ul class='Nav'><li class='Nav__item Nav__item--active'><a href="../Get_Started/Get_started_with_ESP32_and_IDF.html">Get started with ESP32 and IDF</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_deprecated.html">Get started with ESP32 - deprecated</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_ESP32_and_Arduino.html">Get started with ESP32 and Arduino</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_MicroPython.html">Get started with RP2040 and MicroPython</a></li><li class='Nav__item '><a href="../Get_Started/Get_started_with_RP2040_and_Arduino.html">Get started with RP2040 and Arduino</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Compatible Accessories</a><ul class='Nav'><li class='Nav__item '><a href="../Compatible_Accessories/ESP_accessories.html">ESP accessories</a></li><li class='Nav__item '><a href="../Compatible_Accessories/RP_accessories.html">RP accessories</a></li></ul></li><li class='Nav__item  has-children'><a href="#" class="aj-nav folder"><i class="Nav__arrow">&nbsp;</i>Advanced Features</a><ul class='Nav'><li class='Nav__item '><a href="../Advanced_Features/Get_started_with_MPU6500.html">Get started with MPU6500</a></li></ul></li></ul>
+
+            <div class="Links">
+                                    <hr/>
+                                            <a href="https://www.udoo.org" target="_blank">Home</a>
+                        <br />
+                                            <a href="https://www.udoo.org/forum" target="_blank">Forum</a>
+                        <br />
+                                            <a href="https://github.com/UDOOboard/Key-Docs" target="_blank">Github Docs</a>
+                        <br />
+                                    
+                
+                            </div>
+        </div>
+    </aside>
+    <div class="Columns__right ">
+        <div class="Columns__right__content">
+            <div class="doc_content">
+                <article class="Page">
+
+    <div class="Page__header">
+        <h1>Get started with ESP32 and IDF</h1>
+            </div>
+
+
+    <div class="s-content">
+        <div style="padding: 20px; background-color: #04AA6D; color: white; margin-bottom: 15px;">
+This is the new version of the ESP-IDF getting started guide, using a newer version and with corrected typos. If you want to check the older version, go to <a href="/Get_Started/Get_started_with_ESP32_deprecated.html">this page</a>.
+</div>
+<p>After speaking a long about technical specifications and boards components, let's start doing things in order to load firmware in flash memory of microcontrollers!</p>
+<p>Now we will install all <strong>dependencies</strong> and <strong>frameworks</strong>, in Linux-based and Windows OSs, for ESP32 microcontroller and start <strong>programming</strong> it.<br />
+The framework we chose is the official one, the <a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html" class="Link--external">ESP-IDF</a>, but several other frameworks can be used to programming the ESP32. Among the others the most used are <a href="https://docs.micropython.org/en/latest/esp32/tutorial/intro.html" class="Link--external">MicroPython</a> and <a href="https://github.com/espressif/arduino-esp32" class="Link--external">Arduino</a>. Choose the one you prefer!</p>
+<h2 id="page_Linux">Linux</h2>
+<p><a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html" class="Link--external"><strong>Here</strong></a> you can find the official documentation that explains with many more details the installation. For a quick guide read below!</p>
+<p>In addition to following packages, a text editor is required: you can use <code>VS Code</code> or <code>emacs</code> or whatever you want!</p>
+<p>Open a terminal and type the following commands:</p>
+<pre><code class="language-bash"># Install the essential dependencies
+sudo apt install cmake wget git python3 python3-pip virtualenv
+# Create the workspace folder (if it doesn't exist yet), clone the repository of ESP-IDF version 5.0.4 and install it
+mkdir ~/ws/esp
+cd ~/ws/esp
+git clone --recursive https://github.com/espressif/esp-idf.git -b v5.0.4
+cd esp-idf
+bash install.sh esp32
+
+# Before programming the ESP32, a set of environment variables need to be defined in the shell environment
+#   Let's create an alias to easily load them and invoke it for each terminal you need
+cd ~
+echo &quot;alias get_idf='. $HOME/ws/esp/esp-idf/export.sh'&quot; &gt;&gt; ~/.bash_aliases
+source $HOME/.bash_aliases
+get_idf
+# The environment is correctly loaded!
+</code></pre>
+<hr />
+<p>It's the moment to create and load on your board the first program that makes the two on-board LEDs blink!<br />
+Open a terminal and type:</p>
+<pre><code class="language-bash"># First of all load the needed variables by calling the alias
+get_idf
+cd ~/ws/esp
+# Create the project
+idf.py create-project blinker
+cd blinker/main
+</code></pre>
+<p>Open the <code>blinker.c</code> file inside current folder and copy the content below inside it.<br />
+It is the entry-point of your firmware and contains the instruction to perform the actions we want.</p>
+<pre><code class="language-C">#include &lt;stdio.h&gt;
+
+#include &lt;driver/gpio.h&gt;
+#include &lt;freertos/FreeRTOS.h&gt;
+#include &lt;freertos/task.h&gt;
+
+#define B_LED_PIN GPIO_NUM_32
+#define Y_LED_PIN GPIO_NUM_33
+
+void led_blinker_task (void)
+{
+    esp_rom_gpio_pad_select_gpio(B_LED_PIN);
+    gpio_set_direction (B_LED_PIN, GPIO_MODE_OUTPUT);
+
+    esp_rom_gpio_pad_select_gpio(Y_LED_PIN);
+    gpio_set_direction (Y_LED_PIN, GPIO_MODE_OUTPUT);
+
+    while (1) {
+        gpio_set_level(Y_LED_PIN, 0);
+        gpio_set_level(B_LED_PIN, 0);
+
+        gpio_set_level(B_LED_PIN, 1);
+        vTaskDelay(pdMS_TO_TICKS(128));
+        gpio_set_level(B_LED_PIN, 0);
+        vTaskDelay(pdMS_TO_TICKS(128));
+        gpio_set_level(B_LED_PIN, 1);
+        vTaskDelay(pdMS_TO_TICKS(128));
+        gpio_set_level(B_LED_PIN, 0);
+        
+        gpio_set_level(Y_LED_PIN, 1);
+        vTaskDelay(pdMS_TO_TICKS(2000));
+    }
+}
+
+
+void app_main(void)
+{
+    xTaskCreate (&amp;led_blinker_task, &quot;led_blinker_task&quot;, 1024, NULL, 2, NULL);
+}
+</code></pre>
+<p>Now that everything is ready, you can build and flash the program.
+As explained in the video at the beginning of this page, you must leave the jumper <strong>JP1</strong> opened to drive the serial communication to ESP microcontroller and then you can connect your board to PC.<br />
+After the connection, a serial port appears on your file system. Its path can be <code>/dev/ttyUSB0</code> or <code>/dev/ttyUSB1</code> or <code>/dev/ttyUSB2</code> and so on, depending if you already have connected serial devices. In the following commands, the port path is referred with <code>&lt;PORT&gt;</code> string.<br />
+Finally you have to put the target MCU in flash mode, so close the jumper <strong>JP2</strong> and push the button <strong>SW3</strong> to reset it. The microcontroller can be programmed!</p>
+<p>To do that, in a terminal with environment variales already loaded, type the following commands:</p>
+<pre><code class="language-bash">cd ~/ws/esp/blinker
+idf.py -p &lt;PORT&gt; build flash monitor
+</code></pre>
+<p>The above command will build the entire project (<code>build</code> command), will load the firmware into the ESP flash memory (<code>flash</code> command) and will monitor the output produced by the microcontroller and sent via the serial connection (<code>monitor</code> command).<br />
+Keep in mind that you can also invoke <code>build</code>, <code>flash</code>, and <code>monitor</code> commands separately.<br />
+Type the command <code>idf.py help</code> to get the full list of available commands.</p>
+<p>At this point the board need to be resetted to execute the just flashed firmware.<br />
+Let's open the jumper <strong>JP2</strong> and push the reset button <strong>SW3</strong> to see LEDs in action!</p>
+<h2 id="page_Windows">Windows</h2>
+<p>For Windows OS installation, Espressif provides an installer which automatically performs everything.<br />
+Firstly download the installer <a href="https://dl.espressif.com/dl/esp-idf/?idf=5.0.4" class="Link--external">here</a> and launch it.</p>
+<p>After the installation, you can open a <strong>ESP-IDF prompt</strong> by searching for <strong>ESP-IDF 5.0.4 CMD</strong> entry in the Start menu.<br />
+Once launched, a new prompt is executed with the environment already loaded.</p>
+<p>If everything has been installed fine, you can create a project. To do that copy the code and flash the ESP32
+in the same way explained for the Linux OS using an <strong>ESP-IDF command prompt</strong>.</p>
+<hr />
+<p>To obtain more information about the Windows OS, <a href="https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/windows-setup.html" class="Link--external"><strong>here</strong></a> you can find the official documentation.</p>
+    </div>
+
+        <nav>
+        <ul class="Pager">
+            <li class=Pager--prev><a href="../Hardware_References/MCUs_connections.html">Previous</a></li>            <li class=Pager--next><a href="../Get_Started/Get_started_with_ESP32_deprecated.html">Next</a></li>        </ul>
+    </nav>
+    
+<span style="float: left; font-size: 10px; color: gray;">
+This page was last updated on Friday, March 15, 2024 at 7:47 AM.
+</span>
+
+</article>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(function() {
+                tipuesearch({
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>
