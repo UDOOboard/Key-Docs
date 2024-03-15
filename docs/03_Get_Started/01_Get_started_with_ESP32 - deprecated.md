@@ -1,6 +1,6 @@
 
 <div style="padding: 20px; background-color: #FC9800; color: white; margin-bottom: 15px;">
-This page has been deprecated! Go to <a href="/Get_Started/Get_started_with_ESP32.html">this page</a> to read the guide with ESP-IDF version 5.0.4 and corrected typos.
+This page has been deprecated! Go to <a href="/Get_Started/Get_started_with_ESP32_and_IDF.html">this page</a> to read the guide with ESP-IDF version 5.0.4 and corrected typos.
 </div>
 
 After speaking a long about technical specifications and boards components, let's start doing things in order to load firmware in flash memory of microcontrollers!

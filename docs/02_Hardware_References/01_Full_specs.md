@@ -25,7 +25,7 @@ Below the full technical specifications
 
 In addition to this guide, several ones are available online:
 + for a full explanation of the UDOO KEY hardware download the [UDOO KEY User Manual](https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_MANUAL.pdf)
-+ see the [Get Started - ESP32](/03_Get_Started/00_Get_started_with_ESP32.md), [Get Started - RP2040 and MicroPython](/03_Get_Started/02_Get_started_with_RP2040_and_MicroPython.md) and [Get Started - RP2040 and Arduino](/03_Get_Started/03_Get_started_with_RP2040_and_Arduino.md) sections for all the useful information for a quick installation
++ see the [Get Started - ESP32 and IDF](/03_Get_Started/00_Get_started_with_ESP32_and_IDF.md), [Get Started - ESP32 and Arduino](/03_Get_Started/00_Get_started_with_ESP32_and_Arduino.md), [Get Started - RP2040 and MicroPython](/03_Get_Started/02_Get_started_with_RP2040_and_MicroPython.md) and [Get Started - RP2040 and Arduino](/03_Get_Started/03_Get_started_with_RP2040_and_Arduino.md) sections for all the useful information for a quick installation
 + [here](https://udoo.org/download/files/UDOO_KEY/Doc/UDOO_KEY_SCHEMATICS.pdf) you can find the schematics file for the UDOO KEY
 + [official ESP32 development framework](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/index.html)
 + [Raspberry PI PICO datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
