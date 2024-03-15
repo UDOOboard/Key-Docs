@@ -21,7 +21,7 @@ We have recorded a video in which all steps described below are directly execute
 
 Here a distinction between the Linux-based and Windows OSs is not needed, since MicroPython is host platform agnostic.
 
-First of all you need to install `python3` and `python3-pip`, but they are already installed by following the [guide for ESP32 part](/03_Get_Started/00_Get_started_with_ESP32.md).  
+First of all you need to install `python3` and `python3-pip`, but they are already installed by following the [guide for ESP32 and IDF part](/03_Get_Started/00_Get_started_with_ESP32_and_IDF.md).  
 You also need to install the `rshell` python package. It s needed to upload the python code and interact with the MicroPython interpreter running on the MCU.
 In a command line, type:
 ```bash
